@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
         <link rel="stylesheet" href="/static/css/reveal.css">
         <link rel="stylesheet" href="/static/css/default.css" id="theme">
-        <link rel="stylesheet" href="/static/css/theme/moon.css">
+        <link rel="stylesheet" href="/static/css/theme/sky.css">
 
         <!--[if lt IE 9]>
         <script src="lib/js/html5shiv.js"></script>
@@ -30,15 +30,15 @@
 
                 <section>
                     <div>
-						<h4>De quelle entreprise voulez vous qu'on parle?</h4>
-						</br>
+						            <h4>De quelle entreprise voulez vous qu'on parle?</h4>
+						            </br>
                         <h3>Envoyez "google" ou "facebook" au</h3>
                         <h1>{{ telephone }}</h1>
                     </div>
                     <br>
                     <div style="display: inline;">
                         <div style="float: left;">
-                            <h2><div id="google">0</div><h2 style="color: #990000">Google</h2> 
+                            <h2><div id="google">0</div><h2 style="color: #990000">Google</h2>
                         </div>
                         <div style="float: right;">
                             <h2><div id="facebook">0</div><h2 style="color: #00356B">Facebook</h2>
@@ -46,21 +46,21 @@
                     </div>
                 </section>
 
-				<section data-markdown="/static/content/ingenierie-collective.md"
-				    data-separator="---"  
-				    data-separator-vertical="--">
-				</section>
+        				<section data-markdown="/static/content/ingenierie_collective/slides.md"
+        				    data-separator="---"
+        				    data-separator-vertical="--">
+        				</section>
             </div>
         </div>
 
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
-        <script src="/static/js/reveal.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
+    <script src="/static/js/reveal.js"></script>
 		<script src="/static/js/head.min.js"></script>
 
         <script>
             Reveal.initialize({
-                // Display controls in the bottom right corner
+          // Display controls in the bottom right corner
 			    controls: true,
 
 			    // Display a presentation progress bar
@@ -146,40 +146,35 @@
 			    parallaxBackgroundVertical: null,
 
 			    // Theme that was designed at the top of this file
-                theme: Reveal.getQueryHash().theme,
+          theme: Reveal.getQueryHash().theme,
 
-                // Transition between slides
-                transition: Reveal.getQueryHash().transition || 'default',
+          // Transition between slides
+          transition: Reveal.getQueryHash().transition || 'default',
 
-                dependencies: [
-                                        { src: '/static/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-
-                                        { src: '/static/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        								
-        								{ src: '/static/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                                        
-                                        { src: '/static/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-                                        
-                                        { src: '/static/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-                                        
-                                        { src: '/static/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-                ]
-            });
-            $(document).ready(function() {
-                namespace = '/presentation';
-                var socket = io.connect('http://' + document.domain + ':' + location.port + namespace);
-                /* add and edit choices here */
-                var appropriate_choices = ['google', 'facebook'];
-                socket.on('msg', function(msg) {
-                    /* ensure valid vote and div exists */
-                    if (appropriate_choices.indexOf(msg.div.toLowerCase()) >= 0) {
-                        var checkDiv = $('#' + msg.div);
-                        if (checkDiv.length > 0) {
-                            checkDiv.html(msg.val);
-                        }
-                    }
-                });
-            });
-        </script>
-    </body>
+          dependencies: [
+              { src: '/static/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+              { src: '/static/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+							{ src: '/static/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              { src: '/static/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              { src: '/static/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+              { src: '/static/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          ]
+          });
+          $(document).ready(function() {
+              namespace = '/presentation';
+              var socket = io.connect('http://' + document.domain + ':' + location.port + namespace);
+              /* add and edit choices here */
+              var appropriate_choices = ['google', 'facebook'];
+              socket.on('msg', function(msg) {
+                  /* ensure valid vote and div exists */
+                  if (appropriate_choices.indexOf(msg.div.toLowerCase()) >= 0) {
+                      var checkDiv = $('#' + msg.div);
+                      if (checkDiv.length > 0) {
+                          checkDiv.html(msg.val);
+                      }
+                  }
+              });
+          });
+      </script>
+  </body>
 </html>
