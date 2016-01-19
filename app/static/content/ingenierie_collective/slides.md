@@ -70,22 +70,59 @@ Les participants travaillent conjointement sur une même activité précise afin
 
 ## Les outils numériques
 
-- Ont permis l'essor du travail collaboratif
-
----
-
-## Les outils numériques
-
 **Définition**
 - Les outils numériques concernent l'utilisation de données *opensource* et des technologies du *cloud* pour <font color="#ff784e">partager du savoir</font> et gérer l'information
 - Ils dépassent le cadre de l'individu et permettent à un tissu de participants d'accomplir plus que la <font color="#ff784e">somme</font> de leurs <font color="#ff784e">contributions personnelles</font>
 ---
 
-## Classification des outils numériques
+## Les outils numériques
+
+### Histoire
+
+
 
 ---
 
-## Exemples d'outils numériques
+## Classification des outils numériques
+
+|       **Prix**      |   Gratuit  |     Payant    |
+|   **Utilisation**   |   Simple   |    Complexe   |
+| **Fonctionnalités** |  Basiques  |    Avancées   |
+|      **Public**     | Particuler | Professionnel |
+
+On distingue le cadre entrepreneurial du cadre particulier
+
+---
+
+## Outils de communication
+
+- *Skype*
+- *Slack*
+
+
+---
+
+## Outils de rédaction
+
+- *ShareLatex*
+- *Word online*
+- *Google Documents*
+
+---
+
+## Outils de gestion de projet
+
+- *Someone.io*
+
+---
+
+## Outils de stockage
+
+- *Google Drive* (gratuit | simple | public)
+- *Dropbox* (gratuit | simple | public)
+- *GitHub* (gratuit | simple | public)
+- *Bitbucket* ()
+
 
 ---
 
