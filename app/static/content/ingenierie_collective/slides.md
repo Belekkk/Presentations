@@ -32,18 +32,19 @@
 ## Le travail coopératif
 
 ![Schéma cooperatif](/static/content/ingenierie_collective/schema_cooperatif.jpg)
+Processus de division du travail dans lequel chaque individu se spécialise en une tâche et s'efforce a obtenir un résultat commun
 
 ---
 
 ## Le travail collaboratif
 
-- Théorisé par Yochai Benkler
+- Théorisé par *Yochai Benkler*
 - Plus récent que le travail coopératif
 - Pas d'organisation hiérarchique
 - Aucune contrainte physique
 - On insiste sur la créativité
 - Amélioration en continue (pas de "deadlines")
-- Utilisé par la communauté opensource
+- Utilisé par la communauté *opensource*
 - Peut être ouvert ou semi-ouvert
 
 ---
@@ -51,6 +52,15 @@
 ## Le travail collaboratif
 
 ![Schéma collaboratif](/static/content/ingenierie_collective/schema_collaboratif.jpg)
+Les participants travaillent conjointement sur une même activité précise afin d'atteindre un objectif commun
+
+---
+
+## Coopératif vs. collaboratif
+
+- Le travail coopératif est effectué individuellement, un membre de l'équipe intègre ensuite les variantes produites au sein d'un même ensemble commun
+- Lorsque des groupes collaborent, ils analysent, synthéthisent, et construisent du savoir. Les problèmes sont résolus collectivement. Le travail collaboratif nécessitent davantage de compétences liées à la réflexion que le travail coopératif.
+
 
 ---
 
@@ -62,6 +72,13 @@
 
 - Ont permis l'essor du travail collaboratif
 
+---
+
+## Les outils numériques
+
+**Définition**
+- Les outils numériques concernent l'utilisation de données *opensource* et des technologies du *cloud* pour <font color="#ff784e">partager du savoir</font> et gérer l'information
+- Ils dépassent le cadre de l'individu et permettent à un tissu de participants d'accomplir plus que la <font color="#ff784e">somme</font> de leurs <font color="#ff784e">contributions personnelles</font>
 ---
 
 ## Classification des outils numériques
@@ -79,9 +96,9 @@
 	- *Skype* pour les visioconférences
 	- *JIRA* pour la gestion de projet
 	- *Jenkins CI* pour l'intégration continue
-- *GitHub* automatise les tests unitaires via des outils externes
+- *GitHub* automatise les tests unitaires via des outils externes comme *Travis*
 - La suite *Google* est interconnectée
-- *ShareLatex* propose le stockage des documents sur *Dropbox*
+- *ShareLatex* propose le stockage des documents sur *Dropbox* ou *GitHub*
 
 ---
 
