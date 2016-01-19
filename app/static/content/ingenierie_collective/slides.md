@@ -13,6 +13,19 @@
 
 ---
 
+## Le travail cooperatif
+Processus de division du travail dans lequel chaque individu se spécialise en une tâche et s'efforce a obtenir un résultat commun
+
+
+---
+
+## Le travail coopératif
+
+![Schéma cooperatif](/static/content/ingenierie_collective/schema_cooperatif.jpg)
+
+---
+
+
 ## Le travail coopératif
 
 - Théorisé par Chester Barnard
@@ -29,16 +42,20 @@
 
 ---
 
-## Le travail coopératif
+## Le travail collaboratif
+Les participants travaillent conjointement sur une même activité précise afin d'atteindre un objectif commun
 
-![Schéma cooperatif](/static/content/ingenierie_collective/schema_cooperatif.jpg)
-Processus de division du travail dans lequel chaque individu se spécialise en une tâche et s'efforce a obtenir un résultat commun
 
 ---
 
 ## Le travail collaboratif
 
-- Théorisé par *Yochai Benkler*
+![Schéma collaboratif](/static/content/ingenierie_collective/schema_collaboratif.jpg)
+
+---
+
+## Le travail collaboratif
+
 - Plus récent que le travail coopératif
 - Pas d'organisation hiérarchique
 - Aucune contrainte physique
@@ -46,17 +63,17 @@ Processus de division du travail dans lequel chaque individu se spécialise en u
 - Amélioration en continue (pas de "deadlines")
 - Utilisé par la communauté *opensource*
 - Peut être ouvert ou semi-ouvert
+- Théorisé par Yochai Benkler
 
 ---
 
 ## Le travail collaboratif
-
-![Schéma collaboratif](/static/content/ingenierie_collective/schema_collaboratif.jpg)
-Les participants travaillent conjointement sur une même activité précise afin d'atteindre un objectif commun
+### Exemples
+- Wikipédia
 
 ---
 
-## Coopératif vs. collaboratif
+## Coopératif <> collaboratif
 
 - Le travail coopératif est effectué individuellement, un membre de l'équipe intègre ensuite les variantes produites au sein d'un même ensemble commun
 - Lorsque des groupes collaborent, ils analysent, synthéthisent, et construisent du savoir. Les problèmes sont résolus collectivement. Le travail collaboratif nécessitent davantage de compétences liées à la réflexion que le travail coopératif.
@@ -65,6 +82,12 @@ Les participants travaillent conjointement sur une même activité précise afin
 ---
 
 ## Des exemples
+
+---
+
+## Les outils numériques
+
+- Ont permis l'essor du travail collaboratif
 
 ---
 
@@ -83,7 +106,9 @@ Les participants travaillent conjointement sur une même activité précise afin
 
 ---
 
-## Classification des outils numériques
+## Les outils numériques
+
+### Classification
 
 |       **Prix**      |   Gratuit  |     Payant    |
 |   **Utilisation**   |   Simple   |    Complexe   |
