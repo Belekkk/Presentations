@@ -166,6 +166,9 @@ On distingue le cadre entrepreneurial du cadre particulier
 
 ## Exemples de la vie réelle
 
+- [Quip](https://quip.com/) : utilisé par des sociétés telles que Facebook, Instagram ou Fender c'est un outil permettant la modification d'un même document par plusieurs appareils. Est inclu dans cet outil un système de chat.
+- [Phabricator](http://phabricator.org/) : utilisé par des sociétés telles que Facebook, Uber ou DropBox c'est un regroupement d'application Web pour éditer, vérifier, partager du code.
+- [Producteev](https://www.producteev.com) : utilisé par des entités telles que L'université de Stanford ou la société Hitachi c'est un outil collaboratif permettant la répartition de choses à faire, la création de listes et la collaboration sur plusieurs projets.
 ---
 
 ## Bonnes pratiques
