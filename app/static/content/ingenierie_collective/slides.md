@@ -111,9 +111,35 @@ Les participants travaillent conjointement sur une même activité précise afin
 ### Classification
 
 |       **Prix**      |   Gratuit  |     Payant    |
+
+- Gratuit mais limité
+- Possibilité de payer pour plus de fonctionnalité
+- Exemple :
+    - DropboxPro vs Dropbox: 
+         - Prix : 9.99e par mois 
+         - 1To de stockage au lieu de 5,25Go en gratuit
+         - Meilleur contrôle de ses données
+    - Google apps for work :
+         - Prix : 4e ou 8e par mois et par utilisateurs
+         - Adresses mails pro (utilisateur@votrenetreprise.fr)
+         - Espage de stockage plus conséquent
+         - Commandes d'administrations
+
 |   **Utilisation**   |   Simple   |    Complexe   |
+
+- Simple :
+	- Outils de gestion de stockage et agenda
+	- Plannification d'évennements (Doodle)
+- Complexe :
+	- Outils de gestion de projet (Github)
+	- Version premium des outils gratuit car plus de fonctionnalités 
+	
 | **Fonctionnalités** |  Basiques  |    Avancées   |
 |      **Public**     | Particuler | Professionnel |
+
+- Les fonctionnalités et la cible de ces logiciels vont de pair avec le fait que ce soit payant ou non.
+- Payant -> Professionnel -> Fonctionnalités complexe (Ex : Fonctions d'administration )
+- Gratuit -> Tout public -> Fonctionnalités limitées
 
 On distingue le cadre entrepreneurial du cadre particulier
 
