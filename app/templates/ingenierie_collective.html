@@ -30,18 +30,18 @@
 
                 <section>
                     <div>
-						            <h4>De quelle entreprise voulez-vous que nous parlions ?</h4>
+						            <h4>Avez vous déjà entendu parler d'ingénierie collective et d'outils numériques?</h4>
 						            </br>
-                        <h3>Envoyez "google" ou "facebook" au</h3>
+                        <h3>Envoyez "Oui" ou "Non" au</h3>
                         <h1>{{ telephone }}</h1>
                     </div>
                     <br>
                     <div style="display: inline;">
                         <div style="float: left;">
-                            <h2><div id="google">0</div><h2 style="color: #990000">Google</h2>
+                            <h2><div id="google">0</div><h2 style="color: #00356B">Oui</h2>
                         </div>
                         <div style="float: right;">
-                            <h2><div id="facebook">0</div><h2 style="color: #00356B">Facebook</h2>
+                            <h2><div id="facebook">0</div><h2 style="color: #990000">Non</h2>
                         </div>
                     </div>
                 </section>
@@ -164,7 +164,7 @@
               namespace = '/presentation';
               var socket = io.connect('http://' + document.domain + ':' + location.port + namespace);
               /* add and edit choices here */
-              var appropriate_choices = ['google', 'facebook'];
+              var appropriate_choices = ['oui', 'non'];
               socket.on('msg', function(msg) {
                   /* ensure valid vote and div exists */
                   if (appropriate_choices.indexOf(msg.div.toLowerCase()) >= 0) {
