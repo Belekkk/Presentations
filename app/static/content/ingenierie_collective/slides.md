@@ -1,5 +1,9 @@
 ## Introduction
 
+> Le travail coopératif est une coopération entre plusieurs personnes qui interagissent dans un but commun mais se partagent les tâches.
+
+> Le travail collaboratif se fait en collaboration du début à la fin sans division fixe des tâches.
+
 ---
 
 ## Les questions
@@ -8,14 +12,15 @@
 - Peut on les classifier?
 - Quels sont leurs avantages?
 - Quels sont leurs inconvénients?
+- Quels sont les outils qui permettent de travailler à la fois en coopératif ou en collaboratif ?
 - Peut on proposer de bonnes pratiques?
-- Quels sont les *meilleurs* et les *pires* outils?
+- Quels sont les *meilleurs* et les *pires* outils? (selon nous)
 
 ---
 
 ## Le travail cooperatif
 
-Processus de division du travail dans lequel chaque individu se spécialise pour une tâche et pour un objectif commun.
+**Selon nous**, c'est un processus de division du travail dans lequel chaque individu se spécialise dans une tâche pour un objectif commun.
 
 
 ---
@@ -31,28 +36,23 @@ Processus de division du travail dans lequel chaque individu se spécialise pour
 
 - Cadre formel
 - Les tâches sont partagées
-- *Efficacité*: atteindre un objectif
-- *Efficience*: à moindre coût
-- Les individus sont organisés selon une structure
-- Le management des individus est crucial
-- La communication est la base de la coopération
-- Réduire les barrières
+- Métriques de performance (efficacité, efficience, ...)
+- Les individus sont organisés selon une structure verticale
+- La communication n'est pas bilatérale
 - Théorisé par Chester Barnard
-
-> If an organization satisfies the motives of its members while attaining its explicit goals, cooperation among its members will last.
 
 ---
 
 ## Le travail coopératif
 ### Exemples
 
-- Séparation des tâches
+- Chaînes de travail
 - Projets universitaires
 
 ---
 
 ## Le travail collaboratif
-Les participants travaillent conjointement sur une même activité précise afin d'atteindre un objectif commun
+**Selon nous**, les participants travaillent conjointement sur une même activité sans division formelle du travail.
 
 ---
 
@@ -64,9 +64,9 @@ Les participants travaillent conjointement sur une même activité précise afin
 
 ## Le travail collaboratif
 
-- Plus récent que le travail coopératif
-- Pas d'organisation hiérarchique
+- Pas d'organisation hiérarchique verticale
 - Aucune contrainte physique
+- Expansion grâce au web
 - On insiste sur la créativité
 - Amélioration en continue (pas de "deadlines")
 - Utilisé par la communauté *opensource*
@@ -79,9 +79,8 @@ Les participants travaillent conjointement sur une même activité précise afin
 ### Exemples
 
 - Wikipédia
-- Wikinews
 - Bitcoin
-- Applications opensources
+- Projets universitaires (aussi)
 
 ---
 
@@ -95,13 +94,9 @@ Les participants travaillent conjointement sur une même activité précise afin
 ## Les outils numériques
 ### Définition
 
-- Les outils numériques concernent l'utilisation de données *opensource* et des technologies du *web* pour <font color="#ff784e">partager du savoir</font> et gérer l'information
-- Ils dépassent le cadre de l'individu et permettent à un tissu de participants d'accomplir plus que la <font color="#ff784e">somme</font> de leurs <font color="#ff784e">contributions personnelles</font>
-
----
-
-## Les outils numériques
-
+- Digital
+- Permet de "mieux" effectuer une ou plusieurs tâches.
+- Permet de travailler à plusieurs à distance.
 - Ont permis l'essor du travail collaboratif
 
 ---
@@ -111,16 +106,6 @@ Les participants travaillent conjointement sur une même activité précise afin
 
 ![Atouts et usages des outils numériques](/static/content/ingenierie_collective/outils_numeriques.jpg)
 
----
-
-## Les outils numériques
-### Histoire
-
-- Premiers accès aux ordinateurs personnels.
-- Début des outils de traitement de texte dans les années 70.
-- Réseau ARPANET en 1972: partage de contenu.
-- IBM Lotus Notes en 1989: messagerie, workflow, calendrier commun.
-- Apparition du *cloud*.
 
 ---
 
@@ -153,7 +138,7 @@ Les participants travaillent conjointement sur une même activité précise afin
 </br>
 </br>
 
-On distingue le cadre entrepreneurial du cadre particulier
+Distinction entre le cadre entrepreneurial du cadre particulier
 
 ---
 
@@ -184,12 +169,11 @@ On distingue le cadre entrepreneurial du cadre particulier
 
 ## Outils de stockage
 
-- *Google Drive* (gratuit | simple | public)
-- *Dropbox* (gratuit | simple | public)
+- *Google Drive*
+- *Dropbox*
 - *SkyDrive*
-- *GitHub* (gratuit | simple | public)
-- *Bitbucket* ()
-
+- *GitHub*
+- *Bitbucket*
 
 ---
 
@@ -215,29 +199,27 @@ On distingue le cadre entrepreneurial du cadre particulier
 
 ---
 
-## Bonnes pratiques
+## Quelques conseils de bonne pratique
 
 ---
 
 ## Recommandations
 ### Analyse
 
-- de combien de membre se compose l'équipe ?
-- les enjeux
-- les besoins de chacuns
-- tenir compte du travail de chacuns (synchrone / asynchrones
-
----
-
-## Recommandations
-### Méthodologie
-
-- maîtrise des technologies de l'information et de la communication (TIC)
+- De combien de membre se compose l'équipe ?
+- Les enjeux
+- Les besoins de chacun
+- Tenir compte du travail de chacun (synchrone / asynchrones)
+- Maîtrise des technologies de l'information et de la communication (TIC)
 - Motivation des collaborateurs pour le bien du projet
 
+Il doit être simple, clair, intuituf, facile à apprendre, un prix raisonnable...
+
 ---
 
 ## Recommandations
-### Attentes
+### Nos conseils (en tant que SID)
 
-Il doit être simple, clair, intuituf, facile à apprendre,un prix raisonnable....
+---
+
+## Conclusion
