@@ -1,26 +1,26 @@
 ## Introduction
 
-> Le travail coopératif est une coopération entre plusieurs personnes qui interagissent dans un but commun mais se partagent les tâches.
+> "Le travail coopératif est une coopération entre plusieurs personnes qui interagissent dans un but commun mais se partagent les tâches."
 
-> Le travail collaboratif se fait en collaboration du début à la fin sans division fixe des tâches.
+> "Le travail collaboratif se fait en collaboration du début à la fin sans division fixe des tâches."
 
 ---
 
 ## Les questions
 
-- Qu'est ce qu'un outil de travail collaboratif?
-- Peut on les classifier?
-- Quels sont leurs avantages?
-- Quels sont leurs inconvénients?
+- Qu'est ce qu'un outil de travail collaboratif ?
+- Peut on les classifier ?
+- Quels sont leurs avantages ?
+- Quels sont leurs inconvénients ?
 - Quels sont les outils qui permettent de travailler à la fois en coopératif ou en collaboratif ?
-- Peut on proposer de bonnes pratiques?
-- Quels sont les *meilleurs* et les *pires* outils? (selon nous)
+- Peut on proposer de bonnes pratiques ?
+- Quels sont les "meilleurs" et les "pires" outils? (selon nous)
 
 ---
 
 ## Le travail cooperatif
 
-**Selon nous**, c'est un processus de division du travail dans lequel chaque individu se spécialise dans une tâche pour un objectif commun.
+**Selon nous**, c'est un processus de division du travail dans lequel chaque individu se spécialise dans une tâche pour un objectif commun, le tout selon un management vertical.
 
 
 ---
