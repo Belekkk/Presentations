@@ -1,34 +1,34 @@
 # Presentations
 
-From now on I am going to use [Reveal.js](http://lab.hakim.se/reveal-js/#/) to do my presentations. This is where I store the presentation's source code.
+## List
 
-## List of presentations
+- [CMI - 14/03/2016](presentations/static/content/cmi/slides.md)
 
-- [Outils numérique et ingénierie collective](app/static/content/ingenierie-collective.md)
+## Required
 
-## Setup
+- `pip install -r requirements.txt`
+- Add a `presentations/config.py` script and fill in the blanks:
 
-- You need Python.
-- Install the required libraries with ``pip install -r requirements.txt``.
-- You need a ``config.py`` script to setup Flask. Mine looks like this:
+    # General Flask app settings
+    DEBUG = True
+    SECRET_KEY = ...
 
-![config.py](screenshots/config.png)
+    # Redis connection
+    REDIS_SERVER = 'localhost'
+    REDIS_PORT = 6379
+    REDIS_DB = 0
 
-The Redis and Twilio credentials are only needed for interactive presentations. Indeed, for some presentations you can [make the audience vote for the next slide by SMS](https://www.twilio.com/blog/2014/11/choose-your-own-adventure-presentations-with-reveal-js-python-and-websockets.html). For this you also have to install
+    # Twilio API credentials
+    TWILIO_ACCOUNT_SID = ...
+    TWILIO_AUTH_TOKEN = ...
+    TWILIO_NUMBER = ...
 
-- [``ngrok``](https://ngrok.com/download) to create a tunnel towards your localhost, this will enable Twilio to update the Redis database. Put it into the top level of this repository.
-- [Redis](http://redis.io/download)
+## Twilio
 
-## Usage
+[Inspiration](https://www.twilio.com/blog/2014/11/choose-your-own-adventure-presentations-with-reveal-js-python-and-websockets.html)
 
-```sh
-python run.py
-```
-
-If you want to share the presentation, run the previous command and then run
-
-```
-./ngrok http 5000
-```
-
-and voilà. The console you launched ngrok in will give you a URL that links to the presentation. This is also needed for making the audience choose the next slide via Twilio.
+1. `python manage.py runserver`
+2. `ngrok http 5000`
+3. Open `localhost:5000`
+4. Note the `ngrok` URL with `/presentation/twilio/webhook/` at the end [here](https://www.twilio.com/user/account/phone-numbers/incoming)
+5. Profit

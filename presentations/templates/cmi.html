@@ -38,25 +38,25 @@
                     <br>
                     <div style="display: inline;">
                         <div style="float: left;">
-                            <h2><div id="google">0</div><h2 style="color: #00356B">Oui</h2>
+                            <h2><div id="oui">0</div><h2 style="color: #00356B">Oui</h2>
                         </div>
                         <div style="float: right;">
-                            <h2><div id="facebook">0</div><h2 style="color: #990000">Non</h2>
+                            <h2><div id="non">0</div><h2 style="color: #990000">Non</h2>
                         </div>
                     </div>
                 </section>
 
-        				<section data-markdown="/static/content/ingenierie_collective/slides.md"
+        				<section data-markdown="/static/content/cmi/slides.md"
         				    data-separator="---"
         				    data-separator-vertical="--">
         				</section>
             </div>
         </div>
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.5/socket.io.min.js"></script>
     <script src="/static/js/reveal.js"></script>
-		<script src="/static/js/head.min.js"></script>
+	<script src="/static/js/head.min.js"></script>
 
         <script>
             Reveal.initialize({
@@ -154,7 +154,7 @@
           dependencies: [
               { src: '/static/lib/js/classList.js', condition: function() { return !document.body.classList; } },
               { src: '/static/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-							{ src: '/static/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			  { src: '/static/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
               { src: '/static/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
               { src: '/static/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
               { src: '/static/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
@@ -163,9 +163,12 @@
           $(document).ready(function() {
               namespace = '/presentation';
               var socket = io.connect('http://' + document.domain + ':' + location.port + namespace);
+
               /* add and edit choices here */
               var appropriate_choices = ['oui', 'non'];
+
               socket.on('msg', function(msg) {
+                  console.log(msg)
                   /* ensure valid vote and div exists */
                   if (appropriate_choices.indexOf(msg.div.toLowerCase()) >= 0) {
                       var checkDiv = $('#' + msg.div);
