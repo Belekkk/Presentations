@@ -27,7 +27,7 @@
 
 ## Le travail coopératif
 
-![Schéma cooperatif](/static/content/ingenierie_collaborative/schema_cooperatif.jpg)
+![Schéma cooperatif](/static/content/cmi/schema_cooperatif.jpg)
 
 ---
 
@@ -58,7 +58,7 @@
 
 ## Le travail collaboratif
 
-![Schéma collaboratif](/static/content/ingenierie_collaborative/schema_collaboratif.jpg)
+![Schéma collaboratif](/static/content/cmi/schema_collaboratif.jpg)
 
 ---
 
@@ -104,7 +104,7 @@
 ## Les outils numériques
 ### Atouts et usages
 
-![Atouts et usages des outils numériques](/static/content/ingenierie_collaborative/outils_numeriques.jpg)
+![Atouts et usages des outils numériques](/static/content/cmi/outils_numeriques.jpg)
 
 
 ---
@@ -160,7 +160,7 @@ Distinction entre le cadre entrepreneurial du cadre particulier
 
 ## Outils de gestion de projet
 
-- *Someone.io*
+- *UpWave.io*
 - *Doodle*
 - *Wrike*
 - *Basecamp*
@@ -192,10 +192,11 @@ Distinction entre le cadre entrepreneurial du cadre particulier
 
 ## Exemples de la vie réelle
 
-- Quip: Facebook, Instagram ou Fender.
-- Phabricator: Facebook, Uber, DropBox.
-- Producteev: Université de Stanford, Hitachi.
-- Asana: Université d'Harvard, Ligue nationale de baseball, Uber.
+- Quip - Facebook, Instagram ou Fender.
+- Phabricator - Facebook, Uber, DropBox.
+- Producteev - Université de Stanford, Hitachi.
+- Asana - Université d'Harvard, Ligue nationale de baseball, Uber.
+- Doodle - Apple, Google, Nike, Coca Cola
 
 ---
 
