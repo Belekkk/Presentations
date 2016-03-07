@@ -19,10 +19,9 @@ def runserver():
     socketio.run(app, '0.0.0.0', port=5000)
 
 @manager.command
-def clear_redis():
+def redis_clear(key):
     redis_cli = redis.StrictRedis(host='localhost', port='6379', db='0')
-    redis_cli.delete('oui')
-    redis_cli.delete('non')
+    redis_cli.delete(key)
 
 if __name__ == '__main__':
     manager.run()
