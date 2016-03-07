@@ -19,8 +19,8 @@
 ---
 
 ## Le travail cooperatif
-
-**Selon nous**, c'est un processus de division du travail dans lequel chaque individu se spécialise dans une tâche pour un objectif commun, le tout selon un management vertical.
+### Notre définition
+**Selon nous**, c'est un processus de division du travail dans lequel chaque individu se spécialise dans une tâche pour un objectif commun, le tout selon un management vertical. Les tâches sont formellement séparées, en tentant d'éviter les conflits.
 
 
 ---
@@ -39,7 +39,9 @@
 - Métriques de performance (efficacité, efficience, ...)
 - Les individus sont organisés selon une structure verticale
 - La communication n'est pas bilatérale
-- Théorisé par Chester Barnard
+- Théorisé entre par Chester Barnard qui parle plutôt de "système coopératif"
+
+>
 
 ---
 
@@ -48,10 +50,12 @@
 
 - Chaînes de travail
 - Projets universitaires
+- Gouvernement
 
 ---
 
 ## Le travail collaboratif
+### Notre définition
 **Selon nous**, les participants travaillent conjointement sur une même activité sans division formelle du travail.
 
 ---
@@ -66,28 +70,30 @@
 
 - Pas d'organisation hiérarchique verticale
 - Aucune contrainte physique
-- Expansion grâce au web
+- Expansion accélérée avec le développement du web
 - On insiste sur la créativité
 - Amélioration en continue (pas de "deadlines")
 - Utilisé par la communauté *opensource*
 - Peut être ouvert ou semi-ouvert
-- Théorisé par Yochai Benkler
+- Théorisé par `Yochai Benkler`
 
 ---
 
 ## Le travail collaboratif
 ### Exemples
 
-- Wikipédia
+- Linux
+- Projet Gutenberg
 - Bitcoin
-- Projets universitaires (aussi)
+- Projets universitaires
+- Start-up
 
 ---
 
 ## Coopératif <> collaboratif
 
 - Le travail coopératif est effectué individuellement, un membre de l'équipe intègre ensuite les variantes produites au sein d'un même ensemble commun
-- Lorsque des groupes collaborent, ils analysent, synthéthisent, et construisent du savoir. Les problèmes sont résolus collectivement. Le travail collaboratif nécessitent davantage de compétences liées à la réflexion que le travail coopératif.
+- Lorsque des groupes collaborent, ils analysent, synthéthisent, et construisent du savoir. Les problèmes sont résolus collectivement. Le travail collaboratif nécessite davantage de compétences liées à la réflexion que le travail coopératif.
 
 ---
 
@@ -104,7 +110,7 @@
 ## Les outils numériques
 ### Atouts et usages
 
-![Atouts et usages des outils numériques](/static/content/cmi/outils_numeriques.jpg)
+![Atouts et usages des outils numériques](/static/content/cmi/on_cmi_glob.png)
 
 
 ---
@@ -147,6 +153,7 @@ Distinction entre le cadre entrepreneurial du cadre particulier
 - *Skype*
 - *Slack*
 
+![ON_Communication](/static/content/cmi/on_cmi_1.png)
 
 ---
 
@@ -156,24 +163,29 @@ Distinction entre le cadre entrepreneurial du cadre particulier
 - *Word online*
 - *Google Documents*
 
+![ON_Rédaction](/static/content/cmi/on_cmi_2.png)
+
 ---
 
 ## Outils de gestion de projet
 
-- *UpWave.io*
-- *Doodle*
-- *Wrike*
-- *Basecamp*
+- *Doodle* - planificateur de réunions
+- *UpWave.io* - tableaux Kanban, agenda commun, division des tâches
+- *Basecamp* - chat en temps réel, stockage de fichiers, planning central
+- *Wrike* - chronologies, Gantt, partage de documents
+
+![ON_GestionProjet](/static/content/cmi/on_cmi_3.png)
 
 ---
 
 ## Outils de stockage
 
-- *Google Drive*
-- *Dropbox*
-- *SkyDrive*
-- *GitHub*
-- *Bitbucket*
+- *Dropbox* - disponible sur toutes les plateformes, stockage entreprise illimité
+- *Google Drive* - insiste sur la prévisualisation et l'édition de documents, 89 dollars par To
+- *GitHub* - intégration continue, destiné au développeurs, pour toutes les tailles
+- *Bitbucket* - concurrent direct de GitHub
+
+![ON_Stockage](/static/content/cmi/on_cmi_4.png)
 
 ---
 
@@ -185,7 +197,7 @@ Distinction entre le cadre entrepreneurial du cadre particulier
 	- *JIRA* pour la gestion de projet
 	- *Jenkins CI* pour l'intégration continue
 - *GitHub* automatise les tests unitaires via des outils externes comme *Travis*
-- La suite *Google* est interconnectée
+- La suite *Google Docs* est interconnectée
 - *ShareLatex* propose le stockage des documents sur *Dropbox* ou *GitHub*
 
 ---
@@ -196,16 +208,10 @@ Distinction entre le cadre entrepreneurial du cadre particulier
 - Phabricator - Facebook, Uber, DropBox.
 - Producteev - Université de Stanford, Hitachi.
 - Asana - Université d'Harvard, Ligue nationale de baseball, Uber.
-- Doodle - Apple, Google, Nike, Coca Cola
 
 ---
 
-## Quelques conseils de bonne pratique
-
----
-
-## Recommandations
-### Analyse
+## Choisir le bon outil
 
 - De combien de membre se compose l'équipe ?
 - Les enjeux

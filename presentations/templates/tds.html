@@ -3,12 +3,13 @@
     <head>
 
         <meta charset="utf-8">
-        <title>Présentation CMI</title>
+        <title>Toulouse Data Science - OpenBikes</title>
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
         <link rel="stylesheet" href="/static/css/reveal.css">
         <link rel="stylesheet" href="/static/css/default.css" id="theme">
+        <link rel="stylesheet" href="/static/css/theme/zenburn.css">
         <link rel="stylesheet" href="/static/css/theme/sky.css">
 
         <!--[if lt IE 9]>
@@ -20,63 +21,40 @@
             <div class="slides">
 
                 <section>
-                    <h2><b>Outils numériques et ingénierie collaborative</b></h2>
-                    <h4><b>M1 CMI SID</b></h3>
-                    <p><i>14/03/2016</i></p>
+                    <h2><b>La data science au service des vélibs<b></h2>
                     </br>
                     <h3>Axel Bellec</h3>
-                    <h3>Alexis Conan</h3>
                     <h3>Max Halford</h3>
-                    <h3>Giovanni Zanitti</h3>
 
                     <figure>
                       <p style="text-align:center">
-                      <img src="/static/content/cmi/logos.png" alt="logos" style="background:none; border:none; box-shadow:none;">
+                      <img src="/static/content/tds/logo.png" alt="logo" style="background:none; border:none; box-shadow:none;">
                       </p>
                     </figure>
                 </section>
 
                 <section>
                     <div>
-						<h3>Avez vous déjà entendu parler d'<b>ingénierie collaborative</b> ?</h3>
+						<h4>Avez vous déjà eu des problèmes de vélib' ?</h4>
 						</br>
-                        <h3>Envoyez "<b style="color: #00356B">Oui</b>" ou "<b style="color: #990000">Non</b>" au</h3>
+                        <h3>Envoyez "Oui" ou "Non" au</h3>
                         <h1>{{ telephone }}</h1>
                     </div>
                     <br>
                     <div style="display: inline;">
                         <div style="float: left;">
-                            <h2><div id="oui">0</div><h2 style="color: #004C00"><b>Oui</b></h2>
+                            <h2><div id="oui">0</div><h2 style="color: #004C00">Oui</h2>
                         </div>
                         <div style="float: right;">
-                            <h2><div id="non">0</div><h2 style="color: #990000"><b>Non</b></h2>
+                            <h2><div id="non">0</div><h2 style="color: #990000">Non</h2>
                         </div>
                     </div>
                 </section>
 
-        				<section data-markdown="/static/content/cmi/slides.md"
+        				<section data-markdown="/static/content/tds/slides.md"
         				    data-separator="---"
         				    data-separator-vertical="--">
         				</section>
-
-                <section>
-                    <div>
-						<h3>Etes-vous sur votre faim ?</b> ?</h3>
-						</br>
-                        <h3>Envoyez "<b style="color: #00356B">Restez</b>" ou "<b style="color: #990000">Partez</b>" au</h3>
-                        <h1>{{ telephone }}</h1>
-                    </div>
-                    <br>
-                    <div style="display: inline;">
-                        <div style="float: left;">
-                            <h2><div id="restez">0</div><h2 style="color: #004C00"><b>Restez</b></h2>
-                        </div>
-                        <div style="float: right;">
-                            <h2><div id="partez">0</div><h2 style="color: #990000"><b>Partez</b></h2>
-                        </div>
-                    </div>
-                </section>
-
             </div>
         </div>
 
@@ -173,26 +151,26 @@
 			    parallaxBackgroundVertical: null,
 
 			    // Theme that was designed at the top of this file
-          theme: Reveal.getQueryHash().theme,
+                theme: Reveal.getQueryHash().theme,
 
-          // Transition between slides
-          transition: Reveal.getQueryHash().transition || 'default',
+                // Transition between slides
+                transition: Reveal.getQueryHash().transition || 'default',
 
-          dependencies: [
-              { src: '/static/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-              { src: '/static/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-			  { src: '/static/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-              { src: '/static/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-              { src: '/static/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-              { src: '/static/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-          ]
+                dependencies: [
+                      { src: '/static/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                      { src: '/static/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        			  { src: '/static/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                      { src: '/static/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                      { src: '/static/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                      { src: '/static/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                  ]
           });
           $(document).ready(function() {
               namespace = '/presentation';
               var socket = io.connect('http://' + document.domain + ':' + location.port + namespace);
 
               /* add and edit choices here */
-              var appropriate_choices = ['oui', 'non', 'restez', 'partez'];
+              var appropriate_choices = ['oui', 'non'];
 
               socket.on('msg', function(msg) {
                   console.log(msg)
