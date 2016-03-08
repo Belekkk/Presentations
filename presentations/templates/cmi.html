@@ -1,210 +1,209 @@
 <!doctype html>
 <html lang="en">
-    <head>
 
-        <meta charset="utf-8">
-        <title>Présentation CMI</title>
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-        <link rel="stylesheet" href="/static/css/reveal.css">
-        <link rel="stylesheet" href="/static/css/default.css" id="theme">
-        <link rel="stylesheet" href="/static/css/theme/sky.css">
+<head>
+    <meta charset="utf-8">
+    <title>Présentation CMI</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="/static/css/reveal.css">
+    <link rel="stylesheet" href="/static/css/default.css" id="theme">
+    <link rel="stylesheet" href="/static/css/theme/sky.css">
+    <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
 
-        <!--[if lt IE 9]>
-        <script src="lib/js/html5shiv.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-        <div class="reveal">
-            <div class="slides">
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2><b>Outils numériques et ingénierie collaborative</b></h2>
+                <h3><b>M1 CMI SID</b></h3>
+					<p><i>14/03/2016</i></p>
+					</br>
+					<h3>Axel Bellec</h3>
+					<h3>Alexis Conan</h3>
+					<h3>Max Halford</h3>
+					<h3>Giovanni Zanitti</h3>
 
-                <section>
-                    <h2><b>Outils numériques et ingénierie collaborative</b></h2>
-                    <h4><b>M1 CMI SID</b></h3>
-                    <p><i>14/03/2016</i></p>
-                    </br>
-                    <h3>Axel Bellec</h3>
-                    <h3>Alexis Conan</h3>
-                    <h3>Max Halford</h3>
-                    <h3>Giovanni Zanitti</h3>
+					<figure>
+					  <p style="text-align:center">
+					  <img src="/static/content/cmi/logos.png" alt="logos" style="background:none; border:none; box-shadow:none;">
+					  </p>
+					</figure>
+				</section>
 
-                    <figure>
-                      <p style="text-align:center">
-                      <img src="/static/content/cmi/logos.png" alt="logos" style="background:none; border:none; box-shadow:none;">
-                      </p>
-                    </figure>
-                </section>
+				<section>
+					<div>
+			<h3>Avez vous déjà entendu parler d'<b>ingénierie collaborative</b> ?</h3>
+			</br>
+						<h3>Envoyez "<b style="color: #00356B">Oui</b>" ou "<b style="color: #990000">Non</b>" au</h3>
+						<h1>{{ telephone }}</h1>
+					</div>
+					<br>
+					<div style="display: inline;">
+						<div style="float: left;">
+							<h2><div id="oui">0</div><h2 style="color: #00356B"><b>Oui</b></h2>
+						</div>
+						<div style="float: right;">
+							<h2><div id="non">0</div><h2 style="color: #990000"><b>Non</b></h2>
+						</div>
+					</div>
+				</section>
 
-                <section>
-                    <div>
-						<h3>Avez vous déjà entendu parler d'<b>ingénierie collaborative</b> ?</h3>
-						</br>
-                        <h3>Envoyez "<b style="color: #00356B">Oui</b>" ou "<b style="color: #990000">Non</b>" au</h3>
-                        <h1>{{ telephone }}</h1>
-                    </div>
-                    <br>
-                    <div style="display: inline;">
-                        <div style="float: left;">
-                            <h2><div id="oui">0</div><h2 style="color: #004C00"><b>Oui</b></h2>
-                        </div>
-                        <div style="float: right;">
-                            <h2><div id="non">0</div><h2 style="color: #990000"><b>Non</b></h2>
-                        </div>
-                    </div>
-                </section>
+				<section data-markdown="/static/content/cmi/slides.md"
+					data-separator="---"
+					data-separator-vertical="--">
+				</section>
 
-        				<section data-markdown="/static/content/cmi/slides.md"
-        				    data-separator="---"
-        				    data-separator-vertical="--">
-        				</section>
+				<section>
+					<div>
+			<h3>Etes-vous sur votre faim ?</b> ?</h3>
+			</br>
+						<h3>Envoyez "<b style="color: #00356B">Restez</b>" ou "<b style="color: #990000">Partez</b>" au</h3>
+						<h1>{{ telephone }}</h1>
+					</div>
+					<br>
+					<div style="display: inline;">
+						<div style="float: left;">
+							<h2><div id="restez">0</div><h2 style="color: #004C00"><b>Restez</b></h2>
+						</div>
+						<div style="float: right;">
+							<h2><div id="partez">0</div><h2 style="color: #990000"><b>Partez</b></h2>
+						</div>
+					</div>
+				</section>
 
-                <section>
-                    <div>
-						<h3>Etes-vous sur votre faim ?</b> ?</h3>
-						</br>
-                        <h3>Envoyez "<b style="color: #00356B">Restez</b>" ou "<b style="color: #990000">Partez</b>" au</h3>
-                        <h1>{{ telephone }}</h1>
-                    </div>
-                    <br>
-                    <div style="display: inline;">
-                        <div style="float: left;">
-                            <h2><div id="restez">0</div><h2 style="color: #004C00"><b>Restez</b></h2>
-                        </div>
-                        <div style="float: right;">
-                            <h2><div id="partez">0</div><h2 style="color: #990000"><b>Partez</b></h2>
-                        </div>
-                    </div>
-                </section>
+			</div>
+		</div>
 
-            </div>
-        </div>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.5/socket.io.min.js"></script>
+	<script src="/static/js/reveal.js"></script>
+  <script src="/static/js/head.min.js"></script>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.4.2.min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.5/socket.io.min.js"></script>
-    <script src="/static/js/reveal.js"></script>
-	<script src="/static/js/head.min.js"></script>
+		<script>
+			Reveal.initialize({
+		  // Display controls in the bottom right corner
+		  controls: true,
 
-        <script>
-            Reveal.initialize({
-          // Display controls in the bottom right corner
-			    controls: true,
+		  // Display a presentation progress bar
+		  progress: true,
 
-			    // Display a presentation progress bar
-			    progress: true,
+		  // Display the page number of the current slide
+		  slideNumber: true,
 
-			    // Display the page number of the current slide
-			    slideNumber: true,
+		  // Push each slide change to the browser history
+		  history: false,
 
-			    // Push each slide change to the browser history
-			    history: false,
+		  // Enable keyboard shortcuts for navigation
+		  keyboard: true,
 
-			    // Enable keyboard shortcuts for navigation
-			    keyboard: true,
+		  // Enable the slide overview mode
+		  overview: true,
 
-			    // Enable the slide overview mode
-			    overview: true,
+		  // Vertical centering of slides
+		  center: true,
 
-			    // Vertical centering of slides
-			    center: true,
+		  // Enables touch navigation on devices with touch input
+		  touch: true,
 
-			    // Enables touch navigation on devices with touch input
-			    touch: true,
+		  // Loop the presentation
+		  loop: false,
 
-			    // Loop the presentation
-			    loop: false,
+		  // Change the presentation direction to be RTL
+		  rtl: false,
 
-			    // Change the presentation direction to be RTL
-			    rtl: false,
+		  // Turns fragments on and off globally
+		  fragments: true,
 
-			    // Turns fragments on and off globally
-			    fragments: true,
+		  // Flags if the presentation is running in an embedded mode,
+		  // i.e. contained within a limited portion of the screen
+		  embedded: false,
 
-			    // Flags if the presentation is running in an embedded mode,
-			    // i.e. contained within a limited portion of the screen
-			    embedded: false,
+		  // Flags if we should show a help overlay when the questionmark
+		  // key is pressed
+		  help: true,
 
-			    // Flags if we should show a help overlay when the questionmark
-			    // key is pressed
-			    help: true,
+		  // Flags if speaker notes should be visible to all viewers
+		  showNotes: false,
 
-			    // Flags if speaker notes should be visible to all viewers
-			    showNotes: false,
+		  // Number of milliseconds between automatically proceeding to the
+		  // next slide, disabled when set to 0, this value can be overwritten
+		  // by using a data-autoslide attribute on your slides
+		  autoSlide: 0,
 
-			    // Number of milliseconds between automatically proceeding to the
-			    // next slide, disabled when set to 0, this value can be overwritten
-			    // by using a data-autoslide attribute on your slides
-			    autoSlide: 0,
+		  // Stop auto-sliding after user input
+		  autoSlideStoppable: true,
 
-			    // Stop auto-sliding after user input
-			    autoSlideStoppable: true,
+		  // Enable slide navigation via mouse wheel
+		  mouseWheel: false,
 
-			    // Enable slide navigation via mouse wheel
-			    mouseWheel: false,
+		  // Hides the address bar on mobile devices
+		  hideAddressBar: true,
 
-			    // Hides the address bar on mobile devices
-			    hideAddressBar: true,
+		  // Opens links in an iframe preview overlay
+		  previewLinks: false,
 
-			    // Opens links in an iframe preview overlay
-			    previewLinks: false,
+		  // Transition style
+		  transition: 'default', // none/fade/slide/convex/concave/zoom
 
-			    // Transition style
-			    transition: 'default', // none/fade/slide/convex/concave/zoom
+		  // Transition speed
+		  transitionSpeed: 'default', // default/fast/slow
 
-			    // Transition speed
-			    transitionSpeed: 'default', // default/fast/slow
+		  // Transition style for full page slide backgrounds
+		  backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
 
-			    // Transition style for full page slide backgrounds
-			    backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+		  // Number of slides away from the current that are visible
+		  viewDistance: 3,
 
-			    // Number of slides away from the current that are visible
-			    viewDistance: 3,
+		  // Parallax background image
+		  parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
 
-			    // Parallax background image
-			    parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+		  // Parallax background size
+		  parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
 
-			    // Parallax background size
-			    parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+		  // Number of pixels to move the parallax background per slide
+		  // - Calculated automatically unless specified
+		  // - Set to 0 to disable movement along an axis
+		  parallaxBackgroundHorizontal: null,
+		  parallaxBackgroundVertical: null,
 
-			    // Number of pixels to move the parallax background per slide
-			    // - Calculated automatically unless specified
-			    // - Set to 0 to disable movement along an axis
-			    parallaxBackgroundHorizontal: null,
-			    parallaxBackgroundVertical: null,
+		  // Theme that was designed at the top of this file
+		  theme: Reveal.getQueryHash().theme,
 
-			    // Theme that was designed at the top of this file
-          theme: Reveal.getQueryHash().theme,
+		  // Transition between slides
+		  transition: Reveal.getQueryHash().transition || 'default',
 
-          // Transition between slides
-          transition: Reveal.getQueryHash().transition || 'default',
+		  dependencies: [
+			  { src: '/static/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			  { src: '/static/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		{ src: '/static/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			  { src: '/static/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			  { src: '/static/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			  { src: '/static/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		  ]
+		  });
+		  $(document).ready(function() {
+			  namespace = '/presentation';
+			  var socket = io.connect('http://' + document.domain + ':' + location.port + namespace);
 
-          dependencies: [
-              { src: '/static/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-              { src: '/static/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-			  { src: '/static/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-              { src: '/static/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-              { src: '/static/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-              { src: '/static/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-          ]
-          });
-          $(document).ready(function() {
-              namespace = '/presentation';
-              var socket = io.connect('http://' + document.domain + ':' + location.port + namespace);
+			  /* add and edit choices here */
+			  var appropriate_choices = ['oui', 'non', 'restez', 'partez'];
 
-              /* add and edit choices here */
-              var appropriate_choices = ['oui', 'non', 'restez', 'partez'];
-
-              socket.on('msg', function(msg) {
-                  console.log(msg)
-                  /* ensure valid vote and div exists */
-                  if (appropriate_choices.indexOf(msg.div.toLowerCase()) >= 0) {
-                      var checkDiv = $('#' + msg.div);
-                      if (checkDiv.length > 0) {
-                          checkDiv.html(msg.val);
-                      }
-                  }
-              });
-          });
-      </script>
+			  socket.on('msg', function(msg) {
+				  console.log(msg)
+				  /* ensure valid vote and div exists */
+				  if (appropriate_choices.indexOf(msg.div.toLowerCase()) >= 0) {
+					  var checkDiv = $('#' + msg.div);
+					  if (checkDiv.length > 0) {
+						  checkDiv.html(msg.val);
+					  }
+				  }
+			  });
+		  });
+	  </script>
   </body>
 </html>

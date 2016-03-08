@@ -1,7 +1,7 @@
 # Plan
 
 - Présentation générale
-- Collection
+- Collecte des données
 - Visualisation
 - Stockage
 - Prédiction
@@ -43,8 +43,8 @@
 
 ## L'équipe
 
-- Max Halford
-- Axel Bellec
+- Max **Halford**
+- Axel **Bellec**
 - Notre premier site web (et pas le dernier!)
 
 ---
@@ -67,8 +67,9 @@
 
 ## Les données, concrètement
 
-- Le nombre de vélos + le moment de la mise à jour pour chaque station
-- Autant de villes que de formats de données (presque)
+- Le nombre de vélos et de places
+- Le moment de la mise à jour pour chaque station
+- Autant de villes que de formats de données (ou presque)
 - Besoin d'uniformiser les données le plut tôt possible pour généraliser les traitements par la suite
 
 ---
@@ -151,7 +152,8 @@ def normalize(stations):
 
 ---
 
-## Quand un utiliser accède à une URL, LeafletJS...
+## Quand un utilisateur accède à une URL 
+### LeafletJS...
 
 - ouvre le fichier geoJSON de la ville,
 - centre la carte sur la ville,
@@ -209,14 +211,7 @@ def normalize(stations):
 
 ## Exemple de données
 
-<!--
-| Station       | Jour de la semaine | Heure | Minute | Température | Humidité | Vent   | Vélos |
-|---------------|--------------------|-------|--------|-------------|----------|--------|-------|
-| 00003 - Pomme | 1                  | 17    | 25     | 21.0        | 30%      | 70km/h | 13    |
-| 00003 - Pomme | 1                  | 17    | 27     | 21.2        | 30%      | 71km/h | 12    |
-| 00003 - Pomme | 2                  | 18    | 10     | 18.3        | 20%      | 36km/h | 6     |
-| 00003 - Pomme | 3                  | 18    | 12     | 18.2        | 20%      | 36km/h | 7     |
--->
+
 
 ---
 
@@ -240,3 +235,30 @@ def normalize(stations):
 - Prenez le temps de réfléchir à la structure du projet -> temps gagné par la suite
 - Généralisez vos fonctions le plus possible, uniformisez vos données le plus tôt possible
 - Pas besoin d'un bazooka pour tuer une mouche
+
+---
+
+# Contact 
+
+## GitHub
+
+- `github.com/MaxHalford`
+- `github.com/belekkk`
+
+<br>
+## Site web
+
+- `maxhalford.com`
+- `axelbellec.fr`
+
+---
+
+### Vous pouvez nous retrouver sur Twitter
+
+# @OpenBikes_
+
+<figure>
+    <p style="text-align:center">
+        <img src="/static/content/tds/wordcloud.gif" alt="mask_wordcloud" style="background:none; border:none; box-shadow:none;height=30%;width=auto;">
+    </p>
+</figure>
