@@ -16,7 +16,7 @@ manager.add_command('shell', Shell(make_context=make_shell_context))
 
 @manager.command
 def runserver():
-    socketio.run(app, '0.0.0.0', port=5000)
+    socketio.run(app, '0.0.0.0', port=5005)
 
 @manager.command
 def redis_clear(key):
