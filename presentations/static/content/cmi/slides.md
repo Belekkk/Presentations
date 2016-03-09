@@ -18,9 +18,9 @@
 
 ---
 
-## Le travail cooperatif
+## Le travail coopératif
 ### Notre définition
-**Selon nous**, c'est un processus de division du travail dans lequel chaque individu se spécialise dans une tâche pour un objectif commun, le tout selon un management vertical. Les tâches sont formellement séparées, en tentant d'éviter les conflits.
+**Selon nous**, c'est un processus de **division du travail** dans lequel chaque individu se **spécialise** dans une tâche pour un objectif commun, le tout selon un **management vertical**. Les tâches sont formellement **séparées**, en tentant d'**éviter les conflits**.
 
 
 ---
@@ -41,16 +41,15 @@
 - La communication n'est pas bilatérale
 - Théorisé entre par Chester Barnard qui parle plutôt de "système coopératif"
 
->
-
 ---
 
 ## Le travail coopératif
 ### Exemples
 
 - Chaînes de travail
-- Projets universitaires
 - Gouvernement
+- Pôles d'entreprise
+- L'église anglicane
 
 ---
 
@@ -68,6 +67,7 @@
 
 ## Le travail collaboratif
 
+- Théorisé par Yochai Benkler
 - Pas d'organisation hiérarchique verticale
 - Aucune contrainte physique
 - Expansion accélérée avec le développement du web
@@ -75,7 +75,6 @@
 - Amélioration en continue (pas de "deadlines")
 - Utilisé par la communauté *opensource*
 - Peut être ouvert ou semi-ouvert
-- Théorisé par `Yochai Benkler`
 
 ---
 
@@ -85,7 +84,6 @@
 - Linux
 - Projet Gutenberg
 - Bitcoin
-- Projets universitaires
 - Start-up
 
 ---
@@ -94,6 +92,10 @@
 
 - Le travail coopératif est effectué individuellement, un membre de l'équipe intègre ensuite les variantes produites au sein d'un même ensemble commun
 - Lorsque des groupes collaborent, ils analysent, synthéthisent, et construisent du savoir. Les problèmes sont résolus collectivement. Le travail collaboratif nécessite davantage de compétences liées à la réflexion que le travail coopératif.
+
+---
+
+# Les outils numériques
 
 ---
 
@@ -169,10 +171,10 @@ Distinction entre le cadre entrepreneurial du cadre particulier
 
 ## Outils de gestion de projet
 
-- *Doodle* - planificateur de réunions
-- *UpWave.io* - tableaux Kanban, agenda commun, division des tâches
-- *Basecamp* - chat en temps réel, stockage de fichiers, planning central
-- *Wrike* - chronologies, Gantt, partage de documents
+- *Doodle*
+- *UpWave.io*
+- *Basecamp*
+- *Wrike*
 
 ![ON_GestionProjet](/static/content/cmi/on_cmi_3.png)
 
@@ -180,10 +182,10 @@ Distinction entre le cadre entrepreneurial du cadre particulier
 
 ## Outils de stockage
 
-- *Dropbox* - disponible sur toutes les plateformes, stockage entreprise illimité
-- *Google Drive* - insiste sur la prévisualisation et l'édition de documents, 89 dollars par To
-- *GitHub* - intégration continue, destiné au développeurs, pour toutes les tailles
-- *Bitbucket* - concurrent direct de GitHub
+- *Dropbox*
+- *Google Drive*
+- *GitHub*
+- *Bitbucket*
 
 ![ON_Stockage](/static/content/cmi/on_cmi_4.png)
 
@@ -213,7 +215,7 @@ Distinction entre le cadre entrepreneurial du cadre particulier
 
 ## Choisir le bon outil
 
-- De combien de membre se compose l'équipe ?
+- De combien de membres se compose l'équipe ?
 - Les enjeux
 - Les besoins de chacun
 - Tenir compte du travail de chacun (synchrone / asynchrones)

@@ -6,6 +6,7 @@
 - Stockage
 - Prédiction
 - Proposition de trajet
+- Bonnes pratiques
 
 ---
 
@@ -87,7 +88,7 @@ import json
 
 def stations(city):
     url = 'https://api.jcdecaux.com/vls/v1/'
-    data = requests.get(url, apiKey=keys.jcdecaux, contract='Toulouse')
+    data = requests.get(url, apiKey=keys.jcdecaux, contract=city)
     stations = data.json()
     return normalize(stations)
 ```
@@ -230,6 +231,10 @@ def normalize(stations):
 - Les données dynamiques changent (wouah)
 - Différence anodine mais ô combien importante en modélisation.
 
+
+---
+
+# Structure du code
 
 ---
 
