@@ -70,7 +70,14 @@
 
 - Le nombre de vélos + le moment de la mise à jour pour chaque station
 - Autant de villes que de formats de données (presque)
-- Besoin d'uniformiser les données le plut tôt possible pour généraliser les traitements par la suite
+- Besoin d'**uniformiser les données** le plut tôt possible pour **généraliser les traitements** par la suite
+
+---
+
+## Ce qu'il ne faut pas faire
+
+![DSSG1](/static/content/tds/dssg.png)
+![DSSG2](/static/content/tds/dssg2.png)
 
 ---
 
@@ -118,8 +125,8 @@ def normalize(stations):
 
 ## Automatisation
 
-- On définit une fonction de *récupération* et de *normalisation* par fournisseur de données
-- Une file d'attente parallèle (RabbitMQ) gère les appels aux fonctions à un *intervalle régulier* (1 minute suffit)
+- On définit une fonction de **récupération** et de **normalisation** par fournisseur de données
+- Une file d'attente parallèle (RabbitMQ) gère les appels aux fonctions à un **intervalle régulier** (1 minute suffit)
 - Les données sont stockées au fur et à mesure (boucle infinie)
 
 ---
@@ -162,9 +169,9 @@ def normalize(stations):
 
 ## Avantages de Flask + LeafletJS
 
-- Un seul fichier pour toutes les cartes
-- Rapide à développer
-- Les deux sont très utilisés donc beaucoup de posts sur StackOverflow
+- Un seul fichier pour toutes les cartes.
+- Rapide à apprendre, développement rapide.
+- Les deux sont très utilisés donc beaucoup de posts sur StackOverflow :)
 
 ---
 
@@ -188,7 +195,6 @@ def normalize(stations):
 - Extrêmement simple à mettre en place
 - Très fort en écriture (WiredTiger)
 - Pour s'entraîner/changer...
-- Hype
 
 ---
 
@@ -208,40 +214,126 @@ def normalize(stations):
 
 ---
 
+## Objectifs
+
+- Aider un utilisateur à choisir une station
+- Aider les villes à acheminer les vélos d'une station à une autre
+
+---
+
 ## Exemple de données
 
-<!--
-| Station       | Jour de la semaine | Heure | Minute | Température | Humidité | Vent   | Vélos |
-|---------------|--------------------|-------|--------|-------------|----------|--------|-------|
-| 00003 - Pomme | 1                  | 17    | 25     | 21.0        | 30%      | 70km/h | 13    |
-| 00003 - Pomme | 1                  | 17    | 27     | 21.2        | 30%      | 71km/h | 12    |
-| 00003 - Pomme | 2                  | 18    | 10     | 18.3        | 20%      | 36km/h | 6     |
-| 00003 - Pomme | 3                  | 18    | 12     | 18.2        | 20%      | 36km/h | 7     |
--->
+![Donnees](/static/content/tds/donnees.png)
 
 ---
 
-## Exemple de courbe
+## Allure des courbes
+
+![Courbes](/static/content/tds/courbes.png)
 
 ---
 
-## Différences entre données statiques et données dynamiques
+## Carte de chaleur
+
+![Heatmap](/static/content/tds/heatmap.png)
+
+---
+
+## Apprentissage supervisé
+
+- Prédire une valeur en fonction d'une observation
+- S'entraîner sur des données réelles (*train*)
+- Evaluation d'une méthode via une validation croisée (*test*)
+
+---
+
+## Dilemne biais-variance
+
+![bias-variance](/static/content/tds/bias-variance.png)
+
+---
+
+## Défis
+
+- Quelle modélisation ?
+- Quelle méthode supervisée choisir ?
+- Pas beaucoup de données au départ
+- Difficile d'avoir une météo précise
+- Temps d'apprentissage non négligeable
+- Combien de données considérer ?
+
+---
+
+## Modélisation
 
 - Les données statiques sont propres à l'objet étudié (une station)
-- Les données dynamiques changent (wouah)
-- Différence anodine mais ô combien importante en modélisation.
-
-
----
-
-# Structure du code
+- Les données dynamiques varient (wouah)
+- Différence anodine mais extrêmement importante pour la modélisation
+- Possibilité de prédire pour une ville ou pour une station
 
 ---
 
-# Conseils
+## Arbre de décision
+
+---
+
+## Roulement
+
+- On assigne un prédicteur à chaque station
+- On relance les prédicteurs chaque semaine
+- On stocke les prédicteurs dans un dossier
+- D'autres outils peuvent appeller ces prédicteurs
+
+---
+
+## Courbes d'erreurs
+
+![Erreurs](/static/content/tds/erreurs.png)
+
+---
+
+## Gestion de l'erreur commise
+
+---
+
+## Améliorations envisageables
+
+---
+
+# Utilisations
+
+---
+
+## Poser/prendre un vélo
+
+---
+
+## Gérer les pénuries
+
+---
+
+# Conclusion
+
+---
+
+## Structure du projet
+
+---
+
+## Conseils
 
 - Utiliser des normes (geoJSON, ISO 8601 pour les dates...)
 - Keep it simple, stupid!
-- Prenez le temps de réfléchir à la structure du projet -> temps gagné par la suite
-- Généralisez vos fonctions le plus possible, uniformisez vos données le plus tôt possible
+- Réflechir à la structure du projet = investissement
+- Décomposer en microservices
+- Généraliser les traitements le plus possibles
 - Pas besoin d'un bazooka pour tuer une mouche
+
+---
+
+## Ouvertures
+
+- Application iPhone/Android
+- Notifications pour signaler les vélos cassés
+- Granulariser les prédictions
+- Ajouter des villes!

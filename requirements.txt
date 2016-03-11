@@ -6,4 +6,3 @@ redis
 twilio
 gevent
 
-gevent==1.1a1

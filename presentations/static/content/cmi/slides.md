@@ -1,7 +1,9 @@
-## Introduction
+## Définitions
 
+
+#### **Travail coopératif**
 > "Le travail coopératif est une coopération entre plusieurs personnes qui interagissent dans un but commun mais se partagent les tâches."
-
+#### **Travail collaboratif**
 > "Le travail collaboratif se fait en collaboration du début à la fin sans division fixe des tâches."
 
 ---
@@ -10,11 +12,10 @@
 
 - Qu'est ce qu'un outil de travail collaboratif ?
 - Peut on les classifier ?
-- Quels sont leurs avantages ?
-- Quels sont leurs inconvénients ?
+- Quels sont leurs avantages et inconvénients ?
 - Quels sont les outils qui permettent de travailler à la fois en coopératif ou en collaboratif ?
 - Peut on proposer de bonnes pratiques ?
-- Quels sont les "meilleurs" et les "pires" outils? (selon nous)
+- Quels sont les "meilleurs" et les "pires" outils ?
 
 ---
 
@@ -67,7 +68,7 @@
 
 ## Le travail collaboratif
 
-- Théorisé par Yochai Benkler
+- Théorisé par Yochai Benkler : '*peer production*'
 - Pas d'organisation hiérarchique verticale
 - Aucune contrainte physique
 - Expansion accélérée avec le développement du web
