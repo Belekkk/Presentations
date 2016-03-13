@@ -3,7 +3,9 @@
 
 #### **Travail coopératif**
 > "Le travail coopératif est une coopération entre plusieurs personnes qui interagissent dans un but commun mais se partagent les tâches."
+
 #### **Travail collaboratif**
+
 > "Le travail collaboratif se fait en collaboration du début à la fin sans division fixe des tâches."
 
 ---
