@@ -62,6 +62,12 @@
 
 ---
 
+## Flowchart
+
+![Flowchart](/static/content/tds/flowchart.jpg)
+
+---
+
 # Collection des données
 
 ---
@@ -273,7 +279,15 @@ def normalize(stations):
 
 ---
 
-## Arbre de décision
+## Arbre de décision (1)
+
+![Tree](/static/content/tds/tree.png)
+
+---
+
+## Arbre de décision (2)
+
+![Tree2](/static/content/tds/tree2.png)
 
 ---
 
@@ -286,17 +300,25 @@ def normalize(stations):
 
 ---
 
+## Dilemne d'optimisation
+
+- Les tendances changent au fur et à mesure du temps
+- On rafraîchit les prédicteurs tous les combien ?
+- On entraîne le modèle sur combien de jours en arrière ?
+
+---
+
+## Validation croisée temporelle
+
+- On sépare le jeu de données en deux
+- On entraîne le modèle sur la première partie et on prédit le deuxième
+- Deux paramètres **externes au modèle** à optimiser
+
+---
+
 ## Courbes d'erreurs
 
 ![Erreurs](/static/content/tds/erreurs.png)
-
----
-
-## Gestion de l'erreur commise
-
----
-
-## Améliorations envisageables
 
 ---
 
@@ -306,9 +328,48 @@ def normalize(stations):
 
 ## Poser/prendre un vélo
 
+- Des scénarios sont proposés à l'utilisateur
+- L'utilisateur rentre des paramètres
+- On utilise les prédictions pour trouver une station appropriée
+
 ---
 
-## Gérer les pénuries
+## Choisir une station
+
+- Minimisation de la distance et du risque
+- Choix d'un sous-ensemble de stations avec MongoDB
+- Google Distance Matrix pour estimer les durées
+- Estimation de la météo
+
+---
+
+## Prendre puis poser un vélo
+
+- Partir du point A
+- Prendre un vélo à la station 1
+- Poser le vélo à la station 2
+- Aller au point B
+
+---
+
+## Acheminer des vélos de façon optimale
+
+- Domaine pas du tout automatisé
+- Clairement un besoin
+- Patterns réguliers
+- Nécessite une couche supplémentaire d'optimisation
+
+---
+
+## Modélisation en graphes
+
+---
+
+## Gestion de l'erreur commise
+
+- On intègre l'erreur de façon pessimiste
+- Les utilisateurs sont sûrs d'être satisfaits
+- Les prédictions pour les acheminements sont accentuées
 
 ---
 
@@ -317,6 +378,24 @@ def normalize(stations):
 ---
 
 ## Structure du projet
+
+- Architecture microservices
+- On réfléchit en termes de composants
+- Tout se passe sur GitHub
+
+---
+
+## Déploiement
+
+- Tourne sur un droplet Digital Ocean à 20$ mensuels
+- 2GB RAM, 2 coeurs, 40GB SSD, 3TB taux de transfert
+- On réfléchit à Docker
+
+---
+
+## Stabilité
+
+![CPU](/static/content/tds/cpu.png)
 
 ---
 
@@ -331,9 +410,27 @@ def normalize(stations):
 
 ---
 
+## API
+
+- Redistribution de la donnée uniformisée
+- Possibilité de faire une prédiction
+- Données libres <3
+
+---
+
 ## Ouvertures
 
 - Application iPhone/Android
 - Notifications pour signaler les vélos cassés
 - Granulariser les prédictions
 - Ajouter des villes!
+
+---
+
+## Liens
+
+- github.com/OpenBikes
+- github.com/MaxHalford
+- github.com/Belekkk
+
+L'aide est la bienvenue!
