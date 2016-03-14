@@ -2,7 +2,7 @@
 
 
 #### **Travail coopératif**
-> "Le travail coopératif est une coopération entre plusieurs personnes qui interagissent dans un but commun mais se partagent les tâches." 
+> "Le travail coopératif est une coopération entre plusieurs personnes qui interagissent dans un but commun mais se partagent les tâches."
 
 *Systèmes d'information de gestion* / Laurence Monaco
 
@@ -91,7 +91,7 @@
 ### Exemples
 
 - **Linux** : système d'exploitation libre
-- **Projet Gutenberg** : numérisation de livres 
+- **Projet Gutenberg** : numérisation de livres
 - **Bitcoin** : contrôle des transactions
 - **Start-up** : environnement de travail favorisant la créativité, management dit "*flat*"
 - **Tela Botanica** : réseau collaboratif de la botanique
@@ -156,7 +156,7 @@ Distinction entre le cadre entrepreneurial du cadre particulier
 ## Les outils numériques
 ### Exemple
 
-
+![DropBox](/static/content/cmi/dropbox.jpg)
 
 ---
 

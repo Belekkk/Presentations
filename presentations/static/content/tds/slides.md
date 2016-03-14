@@ -58,7 +58,6 @@
 - Prédiction avec **sklearn**
 - Un ensemble de règles et un stack basé sur l'**API Google Maps** pour établir des trajets
 - Redistribution des données via une **API**
-- La sauce secrète
 
 ---
 
@@ -230,7 +229,6 @@ def normalize(stations):
 ## Exemple de données
 
 ![Donnees](/static/content/tds/donnees.png)
-<<<<<<< HEAD
 
 ---
 
@@ -254,43 +252,6 @@ def normalize(stations):
 
 ---
 
-## Dilemne biais-variance
-
-![bias-variance](/static/content/tds/bias-variance.png)
-
----
-
-=======
-
----
-
-## Allure des courbes
-
-![Courbes](/static/content/tds/courbes.png)
-
----
-
-## Carte de chaleur
-
-![Heatmap](/static/content/tds/heatmap.png)
-
----
-
-## Apprentissage supervisé
-
-- Prédire une valeur en fonction d'une observation
-- S'entraîner sur des données réelles (*train*)
-- Evaluation d'une méthode via une validation croisée (*test*)
-
----
-
-## Dilemne biais-variance
-
-![bias-variance](/static/content/tds/bias-variance.png)
-
----
-
->>>>>>> 6d5107c119acc8ddd0acd36b171cc0c9a609d5ad
 ## Défis
 
 - Quelle modélisation ?
@@ -305,13 +266,23 @@ def normalize(stations):
 ## Modélisation
 
 - Les données statiques sont propres à l'objet étudié (une station)
-- Les données dynamiques varient (wouah)
+- Les données dynamiques sont les seuls à prendre en compte
 - Différence anodine mais extrêmement importante pour la modélisation
 - Possibilité de prédire pour une ville ou pour une station
 
 ---
 
-<<<<<<< HEAD
+## Choix des variables
+
+- Jour de la semaine
+- Heure
+- Minute
+- Données météo
+
+**Pas besoin de données géographiques!**
+
+---
+
 ## Arbre de décision (1)
 
 ![Tree](/static/content/tds/tree.png)
@@ -324,12 +295,9 @@ def normalize(stations):
 
 ---
 
-## Roulement
+## Dilemne biais-variance
 
-- On assigne un prédicteur à chaque station
-- On relance les prédicteurs chaque semaine
-- On stocke les prédicteurs dans un dossier
-- D'autres outils peuvent appeller ces prédicteurs
+![bias-variance](/static/content/tds/bias-variance.png)
 
 ---
 
@@ -352,6 +320,16 @@ def normalize(stations):
 ## Courbes d'erreurs
 
 ![Erreurs](/static/content/tds/erreurs.png)
+
+---
+
+## Roulement
+
+- On assigne un prédicteur à chaque station
+- On relance les prédicteurs chaque semaine
+- On stocke les prédicteurs dans un dossier
+- D'autres outils peuvent appeller ces prédicteurs
+- La prédiction devient un **microservice**
 
 ---
 
@@ -406,7 +384,7 @@ def normalize(stations):
 
 ---
 
-# Conclusion
+# Bonus
 
 ---
 
@@ -430,84 +408,38 @@ def normalize(stations):
 
 ![CPU](/static/content/tds/cpu.png)
 
-=======
-## Arbre de décision
-
----
-
-## Roulement
-
-- On assigne un prédicteur à chaque station
-- On relance les prédicteurs chaque semaine
-- On stocke les prédicteurs dans un dossier
-- D'autres outils peuvent appeller ces prédicteurs
-
----
-
-## Courbes d'erreurs
-
-![Erreurs](/static/content/tds/erreurs.png)
-
----
-
-## Gestion de l'erreur commise
-
----
-
-## Améliorations envisageables
-
----
-
-# Utilisations
-
----
-
-## Poser/prendre un vélo
-
----
-
-## Gérer les pénuries
-
----
-
-# Conclusion
-
 ---
 
 ## Structure du projet
 
->>>>>>> 6d5107c119acc8ddd0acd36b171cc0c9a609d5ad
 ---
 
 ## Conseils
 
 - Utiliser des normes (geoJSON, ISO 8601 pour les dates...)
-- Keep it simple, stupid!
-- Réflechir à la structure du projet = investissement
+- Keep it simple, stupid! (KISS)
+- Do one thing and do it well (Philosophie UNIX)
 - Décomposer en microservices
 - Généraliser les traitements le plus possibles
-- Pas besoin d'un bazooka pour tuer une mouche
+- Pas besoin d'une usine à gaz
 
 ---
 
-<<<<<<< HEAD
 ## API
 
 - Redistribution de la donnée uniformisée
 - Possibilité de faire une prédiction
-- Données libres <3
+- Données libres
 
 ---
 
-=======
->>>>>>> 6d5107c119acc8ddd0acd36b171cc0c9a609d5ad
 ## Ouvertures
 
 - Application iPhone/Android
 - Notifications pour signaler les vélos cassés
 - Granulariser les prédictions
-- Ajouter des villes!
-<<<<<<< HEAD
+- Ajouter des villes
+- Intégrer d'autres sources de données
 
 ---
 
@@ -516,7 +448,3 @@ def normalize(stations):
 - github.com/OpenBikes
 - github.com/MaxHalford
 - github.com/Belekkk
-
-L'aide est la bienvenue!
-=======
->>>>>>> 6d5107c119acc8ddd0acd36b171cc0c9a609d5ad
