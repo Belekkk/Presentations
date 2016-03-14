@@ -230,6 +230,7 @@ def normalize(stations):
 ## Exemple de données
 
 ![Donnees](/static/content/tds/donnees.png)
+<<<<<<< HEAD
 
 ---
 
@@ -259,6 +260,37 @@ def normalize(stations):
 
 ---
 
+=======
+
+---
+
+## Allure des courbes
+
+![Courbes](/static/content/tds/courbes.png)
+
+---
+
+## Carte de chaleur
+
+![Heatmap](/static/content/tds/heatmap.png)
+
+---
+
+## Apprentissage supervisé
+
+- Prédire une valeur en fonction d'une observation
+- S'entraîner sur des données réelles (*train*)
+- Evaluation d'une méthode via une validation croisée (*test*)
+
+---
+
+## Dilemne biais-variance
+
+![bias-variance](/static/content/tds/bias-variance.png)
+
+---
+
+>>>>>>> 6d5107c119acc8ddd0acd36b171cc0c9a609d5ad
 ## Défis
 
 - Quelle modélisation ?
@@ -279,6 +311,7 @@ def normalize(stations):
 
 ---
 
+<<<<<<< HEAD
 ## Arbre de décision (1)
 
 ![Tree](/static/content/tds/tree.png)
@@ -397,6 +430,53 @@ def normalize(stations):
 
 ![CPU](/static/content/tds/cpu.png)
 
+=======
+## Arbre de décision
+
+---
+
+## Roulement
+
+- On assigne un prédicteur à chaque station
+- On relance les prédicteurs chaque semaine
+- On stocke les prédicteurs dans un dossier
+- D'autres outils peuvent appeller ces prédicteurs
+
+---
+
+## Courbes d'erreurs
+
+![Erreurs](/static/content/tds/erreurs.png)
+
+---
+
+## Gestion de l'erreur commise
+
+---
+
+## Améliorations envisageables
+
+---
+
+# Utilisations
+
+---
+
+## Poser/prendre un vélo
+
+---
+
+## Gérer les pénuries
+
+---
+
+# Conclusion
+
+---
+
+## Structure du projet
+
+>>>>>>> 6d5107c119acc8ddd0acd36b171cc0c9a609d5ad
 ---
 
 ## Conseils
@@ -410,6 +490,7 @@ def normalize(stations):
 
 ---
 
+<<<<<<< HEAD
 ## API
 
 - Redistribution de la donnée uniformisée
@@ -418,12 +499,15 @@ def normalize(stations):
 
 ---
 
+=======
+>>>>>>> 6d5107c119acc8ddd0acd36b171cc0c9a609d5ad
 ## Ouvertures
 
 - Application iPhone/Android
 - Notifications pour signaler les vélos cassés
 - Granulariser les prédictions
 - Ajouter des villes!
+<<<<<<< HEAD
 
 ---
 
@@ -434,3 +518,5 @@ def normalize(stations):
 - github.com/Belekkk
 
 L'aide est la bienvenue!
+=======
+>>>>>>> 6d5107c119acc8ddd0acd36b171cc0c9a609d5ad

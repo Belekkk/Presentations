@@ -2,20 +2,29 @@
 
 
 #### **Travail coopératif**
-> "Le travail coopératif est une coopération entre plusieurs personnes qui interagissent dans un but commun mais se partagent les tâches."
+> "Le travail coopératif est une coopération entre plusieurs personnes qui interagissent dans un but commun mais se partagent les tâches." 
+
+*Systèmes d'information de gestion* / Laurence Monaco
+
+---
+## Définitions
+
 #### **Travail collaboratif**
-> "Le travail collaboratif se fait en collaboration du début à la fin sans division fixe des tâches."
+
+> "Le travail collaboratif se fait en collaboration du début à la fin sans division fixe des tâches."  
+
+*Univ. Paris-Est* / Dominique Revuz
 
 ---
 
 ## Les questions
 
 - Qu'est ce qu'un outil de travail collaboratif ?
-- Peut on les classifier ?
+- Peut-on les classifier ?
 - Quels sont leurs avantages et inconvénients ?
 - Quels sont les outils qui permettent de travailler à la fois en coopératif ou en collaboratif ?
-- Peut on proposer de bonnes pratiques ?
-- Quels sont les "meilleurs" et les "pires" outils ?
+- Peut-on proposer de bonnes pratiques ?
+- Quels sont les outils les plus efficaces ?
 
 ---
 
@@ -36,8 +45,8 @@
 ## Le travail coopératif
 
 - Cadre formel
-- Les tâches sont partagées
-- Métriques de performance (efficacité, efficience, ...)
+- Les tâches sont partagées et séparées
+- Métriques de performance (efficacité, efficience)
 - Les individus sont organisés selon une structure verticale
 - La communication n'est pas bilatérale
 - Théorisé entre par Chester Barnard qui parle plutôt de "système coopératif"
@@ -47,10 +56,9 @@
 ## Le travail coopératif
 ### Exemples
 
-- Chaînes de travail
-- Gouvernement
-- Pôles d'entreprise
-- L'église anglicane
+- **Chaînes de travail**
+- **Gouvernement**
+- **Pôles d'entreprise**
 
 ---
 
@@ -68,9 +76,9 @@
 
 ## Le travail collaboratif
 
-- Théorisé par Yochai Benkler : '*peer production*'
+- Théorisé par Yochai Benkler : "*peer production*"
 - Pas d'organisation hiérarchique verticale
-- Aucune contrainte physique
+- Aucune obligation de contrainte physique
 - Expansion accélérée avec le développement du web
 - On insiste sur la créativité
 - Amélioration en continue (pas de "deadlines")
@@ -82,17 +90,19 @@
 ## Le travail collaboratif
 ### Exemples
 
-- Linux
-- Projet Gutenberg
-- Bitcoin
-- Start-up
+- **Linux** : système d'exploitation libre
+- **Projet Gutenberg** : numérisation de livres 
+- **Bitcoin** : contrôle des transactions
+- **Start-up** : environnement de travail favorisant la créativité, management dit "*flat*"
+- **Tela Botanica** : réseau collaboratif de la botanique
+- **Framasoft** : réseau de projets collaboratifs lié aux logiciels libres
 
 ---
 
 ## Coopératif <> collaboratif
 
-- Le travail coopératif est effectué individuellement, un membre de l'équipe intègre ensuite les variantes produites au sein d'un même ensemble commun
-- Lorsque des groupes collaborent, ils analysent, synthéthisent, et construisent du savoir. Les problèmes sont résolus collectivement. Le travail collaboratif nécessite davantage de compétences liées à la réflexion que le travail coopératif.
+- Le travail coopératif est effectué **individuellement**, un membre de l'équipe **intègre** ensuite les variantes produites au sein d'un même **ensemble commun**
+- Lorsque des groupes collaborent, ils analysent, synthéthisent, et construisent du savoir. Les problèmes sont résolus **collectivement**. Le travail collaboratif nécessite davantage de compétences liées à la **réflexion** que le travail coopératif.
 
 ---
 
@@ -103,18 +113,10 @@
 ## Les outils numériques
 ### Définition
 
-- Digital
-- Permet de "mieux" effectuer une ou plusieurs tâches.
-- Permet de travailler à plusieurs à distance.
-- Ont permis l'essor du travail collaboratif
-
----
-
-## Les outils numériques
-### Atouts et usages
-
-![Atouts et usages des outils numériques](/static/content/cmi/on_cmi_glob.png)
-
+- Améliore la réalisation d'une ou plusieurs tâches
+- Travail à plusieurs à distance
+- A l'origine de l'essor du travail collaboratif
+- Expansion liée à l'avènement du digital et des TIC
 
 ---
 
@@ -151,6 +153,20 @@ Distinction entre le cadre entrepreneurial du cadre particulier
 
 ---
 
+## Les outils numériques
+### Exemple
+
+
+
+---
+
+## Les outils numériques
+### Atouts et usages
+
+![Atouts et usages des outils numériques](/static/content/cmi/on_cmi_glob.png)
+
+---
+
 ## Outils de communication
 
 - *Skype*
@@ -162,8 +178,8 @@ Distinction entre le cadre entrepreneurial du cadre particulier
 
 ## Outils de rédaction
 
-- *ShareLatex*
-- *Word online*
+- *ShareLaTex* / *OverLeaf*
+- *Word Online*
 - *Google Documents*
 
 ![ON_Rédaction](/static/content/cmi/on_cmi_2.png)
@@ -194,23 +210,23 @@ Distinction entre le cadre entrepreneurial du cadre particulier
 
 ## Composition d'outils numériques
 
-- *Slack* intègre d'autres outils via des plugins
+- ***Slack*** intègre d'autres outils via des plugins
 	- *Lucidcharts* pour les diagrammes
 	- *Skype* pour les visioconférences
 	- *JIRA* pour la gestion de projet
 	- *Jenkins CI* pour l'intégration continue
-- *GitHub* automatise les tests unitaires via des outils externes comme *Travis*
-- La suite *Google Docs* est interconnectée
-- *ShareLatex* propose le stockage des documents sur *Dropbox* ou *GitHub*
+- ***GitHub*** automatise les tests unitaires via des outils externes comme *Travis*
+- La suite ***Google Docs*** est interconnectée
+- ***ShareLaTex*** propose le stockage des documents sur *Dropbox* ou *GitHub*
 
 ---
 
 ## Exemples de la vie réelle
 
-- Quip - Facebook, Instagram ou Fender.
-- Phabricator - Facebook, Uber, DropBox.
-- Producteev - Université de Stanford, Hitachi.
-- Asana - Université d'Harvard, Ligue nationale de baseball, Uber.
+- **Quip** : Facebook, Instagram ou Fender
+- **Phabricator** : Facebook, Uber, DropBox
+- **Producteev** : Université de Stanford, Hitachi
+- **Asana** : Université d'Harvard, Ligue Nationale de baseball, Uber
 
 ---
 
@@ -223,7 +239,7 @@ Distinction entre le cadre entrepreneurial du cadre particulier
 - Maîtrise des technologies de l'information et de la communication (TIC)
 - Motivation des collaborateurs pour le bien du projet
 
-Il doit être simple, clair, intuituf, facile à apprendre, un prix raisonnable...
+Il doit être simple, clair, intuitif, facile à apprendre, un prix raisonnable...
 
 ---
 
