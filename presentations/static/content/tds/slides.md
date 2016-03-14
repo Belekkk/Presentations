@@ -164,7 +164,7 @@ def normalize(stations):
 
 ---
 
-## Quand un utiliser accède à une URL, LeafletJS...
+## Quand un utilisateur accède à une URL, **`LeafletJS`**...
 
 - ouvre le fichier geoJSON de la ville,
 - centre la carte sur la ville,
@@ -172,7 +172,7 @@ def normalize(stations):
 
 ---
 
-## Avantages de Flask + LeafletJS
+## Avantages de `Flask` + `LeafletJS`
 
 - Un seul fichier pour toutes les cartes.
 - Rapide à apprendre, développement rapide.
@@ -366,7 +366,7 @@ def normalize(stations):
 ## Acheminer des vélos de façon optimale
 
 - Domaine pas du tout automatisé
-- Clairement un besoin
+- Besoin clair
 - Patterns réguliers
 - Nécessite une couche supplémentaire d'optimisation
 
@@ -400,7 +400,7 @@ def normalize(stations):
 
 - Tourne sur un droplet Digital Ocean à 20$ mensuels
 - 2GB RAM, 2 coeurs, 40GB SSD, 3TB taux de transfert
-- On réfléchit à Docker
+- On réfléchit à un déploiement sur Docker
 
 ---
 
@@ -438,7 +438,7 @@ def normalize(stations):
 - Application iPhone/Android
 - Notifications pour signaler les vélos cassés
 - Granulariser les prédictions
-- Ajouter des villes
+- Ajouter davantages de villes
 - Intégrer d'autres sources de données
 
 ---
