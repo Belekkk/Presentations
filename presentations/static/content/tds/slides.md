@@ -205,13 +205,55 @@ def normalize(stations):
 
 # Avant
 
-![Avant](/static/content/tds/avant.png)
+```json
+    {
+        "_id": ObjectID("5304c94ba44d082cff0b5d9b"),
+        "number": 55,
+        "name": "00055- ST SERNIN G. ARNOULT",
+        "address": "2 RUE GATIEN ARNOULT",
+        "position": {
+            "lat": 43.6089519604964053,
+            "lon": 1.4410035987261980
+        },
+        "banking": true,
+        "bonus": false,
+        "status": "OPEN",
+        "contract_name": "Toulouse",
+        "bike_stands": 15,
+        "available_bike_stands": 14,
+        "available_bike": 1,
+        "last_update" : NumberLong(1392822479000)
+    }
+```
+
 
 ---
 
 # Après
 
-![Après](/static/content/tds/apres.png)
+```json
+{
+    "_id": "2016-02-15",
+    "u": [
+        {
+            "i" : [
+                {
+                    "m": "23:29:15",
+                    "b": 8,
+                    "s": 12
+                },
+                {
+                    "m": "23:39:17",
+                    "b": 8,
+                    "s": 12
+                }
+            ],
+            "n" : "02 - LES HALLES"
+        },
+        // etc
+    ]
+}
+```
 
 ---
 
@@ -392,7 +434,8 @@ def normalize(stations):
 
 - Architecture microservices
 - On réfléchit en termes de composants
-- Tout se passe sur GitHub
+- Tout se passe sur *GitHub*
+- Travail collaboratif au travers de *Slack*
 
 ---
 
