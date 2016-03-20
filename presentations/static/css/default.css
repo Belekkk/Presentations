@@ -38,6 +38,13 @@ body {
   line-height: 1.2em;
   font-weight: inherit; }
 
+body:after {
+  content: url(../content/tds/credits.png);
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+}
+
 /*********************************************
  * HEADERS
  *********************************************/

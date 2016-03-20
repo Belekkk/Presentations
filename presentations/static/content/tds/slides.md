@@ -1,12 +1,30 @@
-# Plan
 
-- Présentation générale
-- Collection
-- Visualisation
-- Stockage
-- Prédiction
-- Proposition de trajet
-- Bonnes pratiques
+
+## Plan
+
+
+<div id="contentBox" style="margin:0px auto; width:100%">
+
+<div id="column1" style="float:left; margin:0; width:50%;" markdown="1">
+<figure>
+  <p style="text-align:center">
+  <img src="/static/content/tds/wordcloud.gif" alt="wordcloud" style="background:none; border:none; box-shadow:none;">
+  </p>
+</figure>
+**#openbikes**
+</div>
+
+<div id="column2" style="text-align:left;float:left; margin:0;width:50%;" markdown="1">
+<br>
+- **<font color="darkblue">Présentation générale</font>** <br>
+- Collection des données <br>
+- Visualisation <br>
+- Stockage <br>
+- Prédiction <br>
+- Utilisations <br>
+- Bonnes pratiques 
+</div>
+</div>
 
 ---
 
@@ -23,6 +41,7 @@
 </div>
 
 ---
+
 
 ## Carte de Toulouse un dimanche matin
 
@@ -42,13 +61,30 @@
 
 ---
 
-## L'équipe
+## L'équipe 
 
-- Max Halford
-- Axel Bellec
-- Notre premier site web (et pas le dernier!)
+Étudiants en Data Science
+
+<div style="float:left;margin:0 10px 10px 0" markdown="1">
+    ![axelbellec](/static/content/tds/maxhalford.jpg)
+</div>
+
+<div style="float:right;margin:0 10px 10px 0" markdown="1">
+    ![axelbellec](/static/content/tds/axelbellec.jpg)
+</div>
+
+<div style="float:left;margin:0 10px 10px 0" markdown="1">
+    Max **Halford** <br>
+    `maxhalford.com`
+</div>
+
+<div style="float:right;margin:0 10px 10px 0" markdown="1">
+    Axel **Bellec** <br>
+    `axelbellec.fr`
+</div>
 
 ---
+
 
 ## Sous le capot
 
@@ -59,6 +95,8 @@
 - Un ensemble de règles et un stack basé sur l'**API Google Maps** pour établir des trajets
 - Redistribution des données via une **API**
 
+### LOGOS
+
 ---
 
 ## Flowchart
@@ -67,7 +105,15 @@
 
 ---
 
-# Collection des données
+## Plan
+
+- Présentation générale
+- **<font color="darkblue">Collection des données</font>**
+- Visualisation
+- Stockage
+- Prédiction
+- Utilisations
+- Bonnes pratiques
 
 ---
 
@@ -130,25 +176,52 @@ def normalize(stations):
 
 ## Automatisation
 
-- On définit une fonction de **récupération** et de **normalisation** par fournisseur de données
-- Une file d'attente parallèle (RabbitMQ) gère les appels aux fonctions à un **intervalle régulier** (1 minute suffit)
-- Les données sont stockées au fur et à mesure (boucle infinie)
+
+![horloge](/static/content/tds/automatisation.jpg)
+
+- Fonction de **récupération** et de **normalisation** par fournisseur de données
+- File d'attente parallèle (RabbitMQ) gérant les appels aux fonctions à un **intervalle régulier**
+
+<figure>
+  <p style="text-align:center">
+  <img src="/static/content/tds/rabbitmq.gif" alt="rabbitmq" style="background:none; border:none; box-shadow:none;">
+  </p>
+</figure>
 
 ---
 
-# Affichage
+## Plan
+
+- Présentation générale
+- Collection des données
+- **<font color="darkblue">Visualisation</font>**
+- Stockage
+- Prédiction
+- Utilisations
+- Bonnes pratiques
+
 
 ---
 
-## LeafletJS
+<figure>
+  <p style="text-align:center">
+  <img src="/static/content/tds/leaflet.png" alt="leafletjs" style="background:none; border:none; box-shadow:none;">
+  </p>
+</figure>
 
 - Permet d'afficher des points, des lignes et des polygones
 - Grande communauté, beaucoup de plugins, très maintenu
 - Compatible avec tous les formats de données populaires
 
+
+
 ---
 
-## Flask
+<figure>
+  <p style="text-align:center">
+  <img src="/static/content/tds/flask.png" alt="flask" style="background:none; border:none; box-shadow:none;">
+  </p>
+</figure>
 
 - Framework Python pour développer un site web
 - Très "Pythonesque", extrêmement modulable
@@ -164,7 +237,7 @@ def normalize(stations):
 
 ---
 
-## Quand un utilisateur accède à une URL, **`LeafletJS`**...
+## Quand un utilisateur accède à une URL, **LeafletJS**...
 
 - ouvre le fichier geoJSON de la ville,
 - centre la carte sur la ville,
@@ -172,7 +245,7 @@ def normalize(stations):
 
 ---
 
-## Avantages de `Flask` + `LeafletJS`
+## Avantages de **Flask** + **LeafletJS**
 
 - Un seul fichier pour toutes les cartes.
 - Rapide à apprendre, développement rapide.
@@ -180,21 +253,33 @@ def normalize(stations):
 
 ---
 
-# Stockage des données
+## Plan
+
+- Présentation générale
+- Collection des données
+- Visualisation
+- **<font color="darkblue">Stockage</font>**
+- Prédiction
+- Utilisations
+- Bonnes pratiques
 
 ---
 
 ## Que nous faut-il ?
 
-- Date et heure
-- Nombre de vélos
-- Nombre de places
-- La position géographique
-- La météo
+- <i class="fa fa-clock-o"></i> Date et heure
+- <i class="fa fa-bicycle"></i> Nombre de vélos
+- <i class="fa fa-child"></i> Nombre de places
+- <i class="fa fa-map-marker"></i> Position géographique
+- <i class="fa fa-cloud"></i> Météo
 
 ---
 
-# Pourquoi MongoDB ?
+<figure>
+  <p style="text-align:center">
+  <img src="/static/content/tds/mongodb.png" alt="mongodb" style="background:none; border:none; box-shadow:none;">
+  </p>
+</figure>
 
 - Pas besoin d'un schéma compliqué
 - Extrêmement simple à mettre en place
@@ -257,14 +342,22 @@ def normalize(stations):
 
 ---
 
-# Prédiction
+## Plan
+
+- Présentation générale
+- Collection des données
+- Visualisation
+- Stockage
+- **<font color="darkblue">Prédiction</font>**
+- Utilisations
+- Bonnes pratiques
 
 ---
 
 ## Objectifs
 
 - Aider un utilisateur à choisir une station
-- Aider les villes à acheminer les vélos d'une station à une autre
+- Optimiser l'acheminement des vélos
 
 ---
 
@@ -274,7 +367,7 @@ def normalize(stations):
 
 ---
 
-## Allure des courbes
+**Nombre de vélos** disponibles dans **2 stations différentes** de Toulouse
 
 ![Courbes](/static/content/tds/courbes.png)
 
@@ -289,8 +382,20 @@ def normalize(stations):
 ## Apprentissage supervisé
 
 - Prédire une valeur en fonction d'une observation
-- S'entraîner sur des données réelles (*train*)
-- Evaluation d'une méthode via une validation croisée (*test*)
+- S'entraîner sur des données réelles (**train**)
+- Evaluation d'une méthode via une validation croisée (**test**)
+
+<figure>
+  <p style="text-align:center">
+  <img src="/static/content/tds/vc.png" alt="vc" style="width: 450px; background:none; border:none; box-shadow:none;">
+  </p>
+</figure>
+
+---
+
+## Dilemne biais-variance
+
+![bias-variance](/static/content/tds/bias-variance.png)
 
 ---
 
@@ -307,8 +412,8 @@ def normalize(stations):
 
 ## Modélisation
 
-- Les données statiques sont propres à l'objet étudié (une station)
-- Les données dynamiques sont les seuls à prendre en compte
+- Les données **statiques** sont propres à l'objet étudié (une station)
+- Les données **dynamiques** sont les seuls à prendre en compte
 - Différence anodine mais extrêmement importante pour la modélisation
 - Possibilité de prédire pour une ville ou pour une station
 
@@ -321,32 +426,27 @@ def normalize(stations):
 - Minute
 - Données météo
 
-**Pas besoin de données géographiques!**
+<br>
+**Pas besoin de données géographiques !**
 
 ---
 
 ## Arbre de décision (1)
 
-![Tree](/static/content/tds/tree.png)
+![Tree2](/static/content/tds/decisiontree.jpg)
 
 ---
 
 ## Arbre de décision (2)
 
-![Tree2](/static/content/tds/tree2.png)
-
----
-
-## Dilemne biais-variance
-
-![bias-variance](/static/content/tds/bias-variance.png)
+![Tree2](/static/content/tds/decisiontree2.jpg)
 
 ---
 
 ## Dilemne d'optimisation
 
 - Les tendances changent au fur et à mesure du temps
-- On rafraîchit les prédicteurs tous les combien ?
+- On rafraîchit les prédicteurs selon quelle fréquence ?
 - On entraîne le modèle sur combien de jours en arrière ?
 
 ---
@@ -356,6 +456,20 @@ def normalize(stations):
 - On sépare le jeu de données en deux
 - On entraîne le modèle sur la première partie et on prédit le deuxième
 - Deux paramètres **externes au modèle** à optimiser
+
+<figure>
+  <p style="text-align:center">
+  <img src="/static/content/tds/va_temp.png" alt="va_temp" style="height: 300px;background:none; border:none; box-shadow:none;">
+  </p>
+</figure>
+
+---
+
+## Validation croisée temporelle
+
+
+
+<iframe width="900" height="600" frameborder="0" scrolling="no" src="https://plot.ly/~MaxHalford/188.embed?share_key=qgNjdULzOnQIzl9tUFL5cC"/>
 
 ---
 
@@ -375,7 +489,15 @@ def normalize(stations):
 
 ---
 
-# Utilisations
+## Plan
+
+- Présentation générale
+- Collection des données
+- Visualisation
+- Stockage
+- Prédiction
+- **<font color="darkblue">Utilisations</font>**
+- Bonnes pratiques
 
 ---
 
@@ -384,24 +506,42 @@ def normalize(stations):
 - Des scénarios sont proposés à l'utilisateur
 - L'utilisateur rentre des paramètres
 - On utilise les prédictions pour trouver une station appropriée
+- Minimisation de la **distance** et du **risque**
 
 ---
 
 ## Choisir une station
 
-- Minimisation de la distance et du risque
-- Choix d'un sous-ensemble de stations avec MongoDB
-- Google Distance Matrix pour estimer les durées
-- Estimation de la météo
+### Gestion du risque
+
+- Prédiction en temps réel
+- Besoin d'estimer le temps d'arrivée
+- Besoin de la météo
+
+<figure>
+  <p style="text-align:center">
+  <img src="/static/content/tds/owm.png" alt="owm" style="background:none; border:none; box-shadow:none;">
+  </p>
+</figure>
 
 ---
 
-## Prendre puis poser un vélo
+## Choisir une station
 
-- Partir du point A
-- Prendre un vélo à la station 1
-- Poser le vélo à la station 2
-- Aller au point B
+### Gestion de la distance
+
+- Google Distance Matrix pour estimer les durées
+- Choix d'un sous-ensemble de stations avec MongoDB
+
+---
+
+## Scénario possible
+
+<figure>
+  <p style="text-align:center">
+  <img src="/static/content/tds/cheminement.png" alt="cheminement" style="height: 500px;background:none; border:none; box-shadow:none;">
+  </p>
+</figure>
 
 ---
 
@@ -412,9 +552,6 @@ def normalize(stations):
 - Patterns réguliers
 - Nécessite une couche supplémentaire d'optimisation
 
----
-
-## Modélisation en graphes
 
 ---
 
@@ -424,47 +561,63 @@ def normalize(stations):
 - Les utilisateurs sont sûrs d'être satisfaits
 - Les prédictions pour les acheminements sont accentuées
 
+<br>
+
+<figure>
+  <p style="text-align:center">
+  <img src="/static/content/tds/ic.png" alt="ic" style="background:none; border:none; box-shadow:none;">
+  </p>
+</figure>
+
 ---
 
-# Bonus
+## Plan
+
+- Présentation générale
+- Collection des données
+- Visualisation
+- Stockage
+- Prédiction
+- Utilisations
+- **<font color="darkblue">Bonnes pratiques</font>**
 
 ---
 
 ## Structure du projet
 
-- Architecture microservices
+- Architecture **microservices**
 - On réfléchit en termes de composants
-- Tout se passe sur *GitHub*
-- Travail collaboratif au travers de *Slack*
+- Tout se passe sur **GitHub**
+- Travail collaboratif au travers de **Slack**
+
+<figure>
+  <p style="text-align:center">
+  <img src="/static/content/tds/github_slack.gif" alt="github_slack" style="background:none; border:none; box-shadow:none;">
+  </p>
+</figure>
+
 
 ---
 
 ## Déploiement
+### Ressources matérielles
 
-- Tourne sur un droplet Digital Ocean à 20$ mensuels
+- Tourne sur un droplet *Digital Ocean* à 20$ mensuels
 - 2GB RAM, 2 coeurs, 40GB SSD, 3TB taux de transfert
-- On réfléchit à un déploiement sur Docker
+- On réfléchit à un déploiement avec Docker
+
+<figure>
+  <p style="text-align:center">
+  <img src="/static/content/tds/digitalocean.png" alt="digitalocean" style="background:none; border:none; box-shadow:none;">
+  </p>
+</figure>
 
 ---
 
-## Stabilité
+## Déploiement
+### Stabilité
 
 ![CPU](/static/content/tds/cpu.png)
-
----
-
-## Structure du projet
-
----
-
-## Conseils
-
-- Utiliser des normes (geoJSON, ISO 8601 pour les dates...)
-- Keep it simple, stupid! (KISS)
-- Do one thing and do it well (Philosophie UNIX)
-- Décomposer en microservices
-- Généraliser les traitements le plus possibles
-- Pas besoin d'une usine à gaz
 
 ---
 
@@ -473,6 +626,48 @@ def normalize(stations):
 - Redistribution de la donnée uniformisée
 - Possibilité de faire une prédiction
 - Données libres
+
+---
+
+## API
+
+<div class="stretch">
+  <iframe src="http://docs.openbikes.apiary.io/" height="100%" width="100%" />
+</div>
+
+---
+
+## API
+### Exemple de réponse
+
+```json
+{
+  "bikes": {
+    "quantity": 0.0,
+    "std": 2
+  },
+  "city": "Toulouse",
+  "spaces": {
+    "quantity": 17.0,
+    "std": 2
+  },
+  "station": "00003 - POMME",
+  "status": "success",
+  "timestamp": 1467993096.0
+}
+```
+
+
+---
+
+## Conseils
+
+- Utiliser des normes (`geoJSON`, `ISO8601` pour les dates...)
+- Keep it simple, stupid! (KISS)
+- Do one thing and do it well (*Philosophie UNIX*)
+- Décomposer en microservices
+- Généraliser les traitements le plus possibles
+- Pas besoin d'une usine à gaz
 
 ---
 
@@ -486,8 +681,22 @@ def normalize(stations):
 
 ---
 
+## Notre formation
+
+### Université Paul SABATIER - Toulouse III
+
+Statistiques et Informatique Décisionnelle  
+
+<figure>
+  <p style="text-align:center">
+  <img src="/static/content/tds/sid.gif" alt="sid" style="background:none; border:none; box-shadow:none;">
+  </p>
+</figure>
+
+---
+
 ## Liens
 
-- github.com/OpenBikes
-- github.com/MaxHalford
-- github.com/Belekkk
+- <i class="fa fa-github"></i> github.com/OpenBikes
+- <i class="fa fa-github"></i> github.com/MaxHalford
+- <i class="fa fa-github"></i> github.com/Belekkk

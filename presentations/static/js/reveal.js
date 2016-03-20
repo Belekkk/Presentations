@@ -2221,12 +2221,47 @@
 	function updateProgress() {
 
 		// Update progress if enabled
-		if( config.progress && dom.progressbar ) {
+		if( config.progress && dom.progress ) {
 
-			dom.progressbar.style.width = getProgress() * window.innerWidth + 'px';
+			var horizontalSlides = toArray( document.querySelectorAll( HORIZONTAL_SLIDES_SELECTOR ) );
 
+			// The number of past and total slides
+			var totalCount = document.querySelectorAll( SLIDES_SELECTOR + ':not(.stack)' ).length;
+			var pastCount = 0;
+
+			// Step through all slides and count the past ones
+			mainLoop: for( var i = 0; i < horizontalSlides.length; i++ ) {
+
+				var horizontalSlide = horizontalSlides[i];
+				var verticalSlides = toArray( horizontalSlide.querySelectorAll( 'section' ) );
+
+				for( var j = 0; j < verticalSlides.length; j++ ) {
+
+					// Stop as soon as we arrive at the present
+					if( verticalSlides[j].classList.contains( 'present' ) ) {
+						break mainLoop;
+					}
+
+					pastCount++;
+
+				}
+
+				// Stop as soon as we arrive at the present
+				if( horizontalSlide.classList.contains( 'present' ) ) {
+					break;
+				}
+
+				// Don't count the wrapping section for vertical slides
+				if( horizontalSlide.classList.contains( 'stack' ) === false ) {
+					pastCount++;
+				}
+
+			}
+
+			dom.progressbar.style.width = (( pastCount / ( totalCount - 1 ) ) * window.innerWidth)+ 100 + 'px';
+			var margin = (( pastCount / ( totalCount - 1 ) ) * window.innerWidth) + 'px';
+			document.getElementById('progress').style.marginLeft = margin; 
 		}
-
 	}
 
 	/**
@@ -2244,6 +2279,8 @@
 			}
 
 			dom.slideNumber.innerHTML = indexString;
+			document.getElementById('percent').innerHTML = "" + Math.round(100*(indexString/62))+ '%';
+			console.log("" + Math.round(100*(indexString/62))+ '%');
 		}
 
 	}
