@@ -28,13 +28,15 @@
 
 ---
 
-## OpenBikes c'est quoi ?
+## **OpenBikes** c'est quoi ?
 
 - **Visualiser** les vélibs en (quasi) temps réel
 - Faire de la **prédiction** pour optimiser les trajets (gratuitement)
 - **Conseiller** les villes pour **acheminer** les vélos entre stations (depuis le concours)
 
 ---
+
+#### **http://openbikes.co**
 
 <div class="stretch">
   <iframe src="http://openbikes.co/en/index" height="100%" width="100%" />
@@ -85,6 +87,25 @@
 
 ---
 
+## Notre formation
+
+### Université Paul SABATIER - Toulouse III
+
+M1 Statistiques et Informatique Décisionnelle  
+
+<figure>
+  <p style="text-align:center">
+  <img src="/static/content/tds/sid.gif" alt="sid" style="background:none; border:none; box-shadow:none;">
+  </p>
+</figure>
+
+---
+
+### Prix **Open Data Toulouse Métropole**
+
+![Concours](/static/content/tds/concours.png)
+
+---
 
 ## Sous le capot
 
@@ -95,7 +116,11 @@
 - Un ensemble de règles et un stack basé sur l'**API Google Maps** pour établir des trajets
 - Redistribution des données via une **API**
 
-### LOGOS
+<figure>
+  <p style="text-align:center">
+  <img src="/static/content/tds/souslecapot.gif" alt="souslecapot" style="width: 80%;background:none; border:none; box-shadow:none;">
+  </p>
+</figure>
 
 ---
 
@@ -122,6 +147,15 @@
 - Le nombre de vélos + le moment de la mise à jour pour chaque station
 - Autant de villes que de formats de données (presque)
 - Besoin d'**uniformiser les données** le plut tôt possible pour **généraliser les traitements** par la suite
+
+---
+
+## Sources
+
+- *Bixi*, *JCDecaux*, *Citibike*, *Divvy*, *Keolis*, *Nextbike*, *Niceride*, *Santander*, *Velobleu*... 
+- 25 sources de données pour le moment
+- Que des données ouvertes et illimitées...
+- Mais en différents formats!
 
 ---
 
@@ -369,13 +403,20 @@ def normalize(stations):
 
 **Nombre de vélos** disponibles dans **2 stations différentes** de Toulouse
 
-![Courbes](/static/content/tds/courbes.png)
+<figure>
+  <p style="text-align:center">
+  <img src="/static/content/tds/courbes.png" alt="courbes" style="width: 80%;background:none; border:none; box-shadow:none;">
+  </p>
+</figure>
 
 ---
 
 ## Carte de chaleur
-
-![Heatmap](/static/content/tds/heatmap.png)
+<figure>
+  <p style="text-align:center">
+  <img src="/static/content/tds/heatmap.png" alt="heatmap" style="width: 80%;background:none; border:none; box-shadow:none;">
+  </p>
+</figure>
 
 ---
 
@@ -469,13 +510,17 @@ def normalize(stations):
 
 
 
-<iframe width="900" height="600" frameborder="0" scrolling="no" src="https://plot.ly/~MaxHalford/188.embed?share_key=qgNjdULzOnQIzl9tUFL5cC"/>
+<iframe width="900" height="450" frameborder="0" scrolling="no" src="https://plot.ly/~MaxHalford/188.embed?share_key=qgNjdULzOnQIzl9tUFL5cC"/>
 
 ---
 
 ## Courbes d'erreurs
 
-![Erreurs](/static/content/tds/erreurs.png)
+<figure>
+  <p style="text-align:center">
+  <img src="/static/content/tds/erreurs.png" alt="erreurs" style="width:80%;background:none; border:none; box-shadow:none;">
+  </p>
+</figure>
 
 ---
 
@@ -503,9 +548,9 @@ def normalize(stations):
 
 ## Poser/prendre un vélo
 
-- Des scénarios sont proposés à l'utilisateur
+- Des **scénarios** sont proposés à l'utilisateur
 - L'utilisateur rentre des paramètres
-- On utilise les prédictions pour trouver une station appropriée
+- On utilise les prédictions pour trouver une station **appropriée**
 - Minimisation de la **distance** et du **risque**
 
 ---
@@ -678,20 +723,6 @@ def normalize(stations):
 - Granulariser les prédictions
 - Ajouter davantages de villes
 - Intégrer d'autres sources de données
-
----
-
-## Notre formation
-
-### Université Paul SABATIER - Toulouse III
-
-Statistiques et Informatique Décisionnelle  
-
-<figure>
-  <p style="text-align:center">
-  <img src="/static/content/tds/sid.gif" alt="sid" style="background:none; border:none; box-shadow:none;">
-  </p>
-</figure>
 
 ---
 
