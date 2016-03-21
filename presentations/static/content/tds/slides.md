@@ -728,6 +728,7 @@ def normalize(stations):
 
 ## Liens
 
+- <i class="fa fa-twitter"></i> twitter.com/@OpenBikes_
 - <i class="fa fa-github"></i> github.com/OpenBikes
 - <i class="fa fa-github"></i> github.com/MaxHalford
 - <i class="fa fa-github"></i> github.com/Belekkk
